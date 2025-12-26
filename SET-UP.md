@@ -138,14 +138,10 @@ classDiagram
         +bool price_warning
     }
 
-    FactPrices ..> FullMenu : "derived from prices & recipes"
+    FactPrices ..> FullMenu : "derived"
 
-    %% Legend as a note on the right side
-    note right of FullMenu
-      Legend:
-      -- Solid arrows: foreign key relationships
-      -- Dashed arrow: optional/derived table
-    end note
+    %% Legend as a single line note attached to FullMenu
+    note right FullMenu : Legend: -- solid arrows = FK, -- dashed arrow = optional/derived
 ```
 
 Then, run this in terminal to create the tables:
