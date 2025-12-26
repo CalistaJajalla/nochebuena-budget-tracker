@@ -55,7 +55,7 @@ The dataset is sourced from the **Department of Agriculture's Bantay Presyo Prog
 ### Dataset Description
 
 - **Source:** Official Bantay Presyo price reports, originally shared as images on the Department of Agriculture's Facebook page.
-- **Format:** Compiled price data for common food items from December 7 to 21, consolidated into a single OCR-processed PDF to facilitate automated extraction.
+- **Format:** Compiled price data for common food items, consolidated into a single OCR-processed PDF to facilitate automated extraction.
 - **Coverage:**
   - Prices collected from key regional markets nationwide to provide a representative snapshot.
   - Food categories include:
@@ -64,7 +64,6 @@ The dataset is sourced from the **Department of Agriculture's Bantay Presyo Prog
     - Vegetables
     - Staples (e.g., rice, corn)
     - Fruits
-- **Normalization:** Prices are standardized to consistent units such as per kilogram or per piece, enabling accurate comparisons and analysis.
 - **Temporal Granularity:** Weekly snapshots taken on December 7, 14, and 21, capturing price movements during the critical holiday season, when demand and supply dynamics typically shift.
 
 ### Use Cases
@@ -108,40 +107,39 @@ This runs your Postgres container (`nochebuena-budget-tracker_postgres`) needed 
 Before running ETL, create the necessary tables (see `create_tables.sql` under the sql folder) in the Postgres database. Here's a diagram illustrating the fact and dimension tables.
 
 ```mermaid
-erDiagram
-    DIM_ITEM {
-        SERIAL item_id PK
-        TEXT item_name UNIQUE NOT NULL
-        TEXT category
-        TEXT specification
+classDiagram
+    class DimItem {
+        +int item_id
+        +string item_name
+        +string category
+        +string specification
     }
-    DIM_DATE {
-        SERIAL date_id PK
-        DATE date UNIQUE NOT NULL
-        INT week_num
+    class DimDate {
+        +int date_id
+        +date date
+        +int week_num
     }
-    FACT_PRICES {
-        SERIAL price_id PK
-        INT item_id FK
-        INT date_id FK
-        NUMERIC price
+    class FactPrices {
+        +int price_id
+        +int item_id
+        +int date_id
+        +decimal price
+    }
+    DimItem "1" --> "many" FactPrices : item_id
+    DimDate "1" --> "many" FactPrices : date_id
+
+    class FullMenu {
+        +string category
+        +string dish_name
+        +float total_price
+        +int serving_size
+        +list ingredients
+        +list missing_ingredients
+        +bool price_warning
     }
 
-    DIM_ITEM ||--o{ FACT_PRICES : "item_id"
-    DIM_DATE ||--o{ FACT_PRICES : "date_id"
-
-    %% Optional table: Full Menu (from predicted_prices.csv + recipe code)
-    class Full_Menu {
-        STRING category
-        STRING dish_name
-        FLOAT total_price
-        INT serving_size
-        LIST ingredients
-        LIST missing_ingredients
-        BOOL price_warning
-    }
-    %% Dashed line to indicate optional, derived table
-    FACT_PRICES .. Full_Menu : "derived from prices & recipes"
+    %% Dashed arrow for optional/derived relationship
+    FactPrices ..> FullMenu : "derived from prices & recipes"
 ```
 
 Then, run this in terminal to create the tables:
@@ -465,7 +463,7 @@ python etl/clean_prices.py
 python etl/load_db.py
 ```
 
-## 7. Training the Machine Learning Model & Meal Optimization
+## 7. Training the Machine Learning Model
 
 ### 1.`ml/train_price_model.py`
 
