@@ -68,7 +68,7 @@ flowchart TD
 ![Streamlit Banner](./data/pics/health-claims-ml.png)
 
 
-### Here’s the Streamlit demo: https://health-claims-calistajajalla.streamlit.app/
+### Here’s the Streamlit demo: https://nochebuena-budget-tracker.streamlit.app/?embed_options=light_theme,show_footer
 
 ---
 
