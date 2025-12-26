@@ -130,8 +130,8 @@ classDiagram
         +int week_num
     }
 
-    DimItem "1" --> "many" FactPrices : item_id
-    DimDate "1" --> "many" FactPrices : date_id
+    DimItem --> FactPrices : item_id
+    DimDate --> FactPrices : date_id
 
     class FullMenu {
         +string category
@@ -143,9 +143,9 @@ classDiagram
         +bool price_warning
     }
 
-    FactPrices ..> FullMenu : "derived"
+    FactPrices ..> FullMenu : derived
 
-note "Legend:\n- solid arrows = FK\n- dashed arrow = optional/derived"  
+    note "Legend: solid arrows = FK, dashed arrow = optional/derived"
 ```
 
 Then, run this in terminal to create the tables:
