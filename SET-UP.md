@@ -108,23 +108,28 @@ Before running ETL, create the necessary tables (see `create_tables.sql` under t
 
 ```mermaid
 classDiagram
+    direction LR
+
     class DimItem {
         +int item_id
         +string item_name
         +string category
         +string specification
     }
-    class DimDate {
-        +int date_id
-        +date date
-        +int week_num
-    }
+
     class FactPrices {
         +int price_id
         +int item_id
         +int date_id
         +decimal price
     }
+
+    class DimDate {
+        +int date_id
+        +date date
+        +int week_num
+    }
+
     DimItem "1" --> "many" FactPrices : item_id
     DimDate "1" --> "many" FactPrices : date_id
 
@@ -141,7 +146,7 @@ classDiagram
     FactPrices ..> FullMenu : "derived"
 
     %% Legend as a single line note attached to FullMenu
-    note right FullMenu : Legend: -- solid arrows = FK, -- dashed arrow = optional/derived
+    note right FullMenu : Legend: solid arrows = FK, dashed arrow = optional/derived
 ```
 
 Then, run this in terminal to create the tables:
