@@ -145,8 +145,7 @@ classDiagram
 
     FactPrices ..> FullMenu : "derived"
 
-    %% Legend as a single line note attached to FullMenu
-    note right FullMenu : Legend: solid arrows = FK, dashed arrow = optional/derived
+    note right FullMenu : "Legend:_solid_arrows_=_FK,_dashed_arrow_=_optional/derived"
 ```
 
 Then, run this in terminal to create the tables:
