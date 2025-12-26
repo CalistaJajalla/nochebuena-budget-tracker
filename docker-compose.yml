@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: nochebuena-budget-tracker_postgres
+    environment:
+      POSTGRES_USER: noche_user
+      POSTGRES_PASSWORD: noche_pass
+      POSTGRES_DB: nochebuena
+    ports:
+      - "5432:5432"
+    volumes:
+      - nochebuena-budget-tracker_pgdata:/var/lib/postgresql/data
+
+volumes:
+  nochebuena-budget-tracker_pgdata:
