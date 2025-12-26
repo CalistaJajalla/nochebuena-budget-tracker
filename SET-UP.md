@@ -111,36 +111,36 @@ classDiagram
     direction LR
 
     class DimItem {
-        +int item_id
-        +string item_name
-        +string category
-        +string specification
+        int item_id
+        string item_name
+        string category
+        string specification
     }
 
     class FactPrices {
-        +int price_id
-        +int item_id
-        +int date_id
-        +decimal price
+        int price_id
+        int item_id
+        int date_id
+        decimal price
     }
 
     class DimDate {
-        +int date_id
-        +date date
-        +int week_num
+        int date_id
+        date date
+        int week_num
     }
 
     DimItem --> FactPrices : item_id
     DimDate --> FactPrices : date_id
 
     class FullMenu {
-        +string category
-        +string dish_name
-        +float total_price
-        +int serving_size
-        +list ingredients
-        +list missing_ingredients
-        +bool price_warning
+        string category
+        string dish_name
+        float total_price
+        int serving_size
+        list ingredients
+        list missing_ingredients
+        bool price_warning
     }
 
     FactPrices ..> FullMenu : derived
