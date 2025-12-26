@@ -1,0 +1,1138 @@
+{
+  "full_menu": [
+    {
+      "category": "Main Courses",
+      "dish": "Chicken: Roast Whole Chicken",
+      "total_price": 777.97,
+      "serving_size": 5,
+      "ingredients": [
+        "Whole Chicken, Local",
+        "Garlic, Native/Local",
+        "Salt (Iodized)",
+        "Cooking Oil (Coconut)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Chicken: Chicken Drumsticks Adobo",
+      "total_price": 1112.51,
+      "serving_size": 3,
+      "ingredients": [
+        "Chicken Drumstick, Local",
+        "Garlic, Native/Local",
+        "Red Onion, Local",
+        "Salt (Iodized)",
+        "Cooking Oil (Palm Olein, Jolly Brand)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Chicken: Chicken Thighs in Garlic Sauce",
+      "total_price": 914.86,
+      "serving_size": 3,
+      "ingredients": [
+        "Chicken Thigh, Local",
+        "Garlic, Native/Local",
+        "White Onion, Imported",
+        "Salt (Iodized)",
+        "Cooking Oil (Coconut)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Chicken: Chicken Leg Quarter Roast",
+      "total_price": 691.35,
+      "serving_size": 4,
+      "ingredients": [
+        "Bell Pepper (Red), Local",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [
+        "Chicken Leg Quarter, Local"
+      ],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Chicken: Honey Garlic Chicken Wings",
+      "total_price": 904.3,
+      "serving_size": 3,
+      "ingredients": [
+        "Chicken Wing, Local",
+        "Garlic, Native/Local",
+        "Sugar (Brown)",
+        "Salt (Iodized)",
+        "Cooking Oil (Palm Olein, Jolly)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Chicken: Garlic Butter Whole Chicken",
+      "total_price": 777.97,
+      "serving_size": 5,
+      "ingredients": [
+        "Whole Chicken, Local",
+        "Garlic, Native/Local",
+        "Cooking Oil (Coconut)",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Chicken: Chicken Adobo with Bell Pepper",
+      "total_price": 1237.65,
+      "serving_size": 4,
+      "ingredients": [
+        "Chicken Drumstick, Local",
+        "Bell Pepper (Green), Local",
+        "Bell Pepper (Red), Local",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Chicken: Chicken Thighs in Tomato Sauce",
+      "total_price": 840.47,
+      "serving_size": 3,
+      "ingredients": [
+        "Chicken Thigh, Local",
+        "Tomato",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Chicken: Roast Chicken with Onion",
+      "total_price": 927.27,
+      "serving_size": 4,
+      "ingredients": [
+        "Whole Chicken, Local",
+        "Red Onion, Local",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Chicken: Garlic Lemon Chicken",
+      "total_price": 557.28,
+      "serving_size": 4,
+      "ingredients": [
+        "Garlic, Native/Local",
+        "Calamansi",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [
+        "Chicken Leg Quarter, Local"
+      ],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Pork: Lechon Liempo",
+      "total_price": 942.59,
+      "serving_size": 4,
+      "ingredients": [
+        "Pork Belly (Liempo), Local",
+        "Garlic, Native/Local",
+        "Salt (Rock)",
+        "Cooking Oil (Coconut)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Pork: Pork Spare Ribs Sweet BBQ",
+      "total_price": 865.96,
+      "serving_size": 3,
+      "ingredients": [
+        "Pork Spare Ribs, Local",
+        "Garlic, Native/Local",
+        "Sugar (Brown)",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Pork: Braised Pork Boston Shoulder",
+      "total_price": 1247.38,
+      "serving_size": 4,
+      "ingredients": [
+        "Pork Boston Shoulder, Local",
+        "Tomato",
+        "Red Onion, Local",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Pork: Roast Pork Loin",
+      "total_price": 1103.14,
+      "serving_size": 5,
+      "ingredients": [
+        "Pork Loin, Local",
+        "Garlic, Native/Local",
+        "Red Onion, Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Pork: Kasim Adobo",
+      "total_price": 1057.47,
+      "serving_size": 4,
+      "ingredients": [
+        "Pork Picnic Shoulder, Local (Kasim)",
+        "Garlic, Native/Local",
+        "Red Onion, Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Pork: Roasted Pork Hind Leg",
+      "total_price": 899.0,
+      "serving_size": 5,
+      "ingredients": [
+        "Pork Hind Leg (Pigue), Local",
+        "Garlic, Native/Local",
+        "Calamansi",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Pork: Stewed Pork Hind Shank",
+      "total_price": 1064.6,
+      "serving_size": 4,
+      "ingredients": [
+        "Pork Hind Shank, Local",
+        "Tomato",
+        "White Onion, Imported",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Pork: Honey Garlic Pork Loin",
+      "total_price": 916.98,
+      "serving_size": 5,
+      "ingredients": [
+        "Pork Loin, Local",
+        "Garlic, Native/Local",
+        "Sugar (Brown)",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Pork: Pork Belly with Bell Pepper",
+      "total_price": 1401.54,
+      "serving_size": 4,
+      "ingredients": [
+        "Pork Belly (Liempo), Local",
+        "Bell Pepper (Green), Local",
+        "Bell Pepper (Red), Local",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Pork: Braised Kasim with Tomato",
+      "total_price": 880.93,
+      "serving_size": 4,
+      "ingredients": [
+        "Tomato",
+        "Red Onion, Local",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [
+        "Pork Picnic Shoulder, Local"
+      ],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Beef: Beef Brisket Caldereta",
+      "total_price": 1703.09,
+      "serving_size": 5,
+      "ingredients": [
+        "Beef Brisket, Local",
+        "Bell Pepper (Green), Local",
+        "Bell Pepper (Red), Local",
+        "Carrots, Local",
+        "Tomato",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Beef: Beef Short Ribs BBQ",
+      "total_price": 1210.12,
+      "serving_size": 3,
+      "ingredients": [
+        "Beef Short Ribs, Local",
+        "Garlic, Native/Local",
+        "Sugar (Brown)",
+        "Red Onion, Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Beef: Pan-Seared Beef Tenderloin",
+      "total_price": 1248.09,
+      "serving_size": 5,
+      "ingredients": [
+        "Beef Tenderloin, Local",
+        "Garlic, Native/Local",
+        "White Onion, Imported",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Beef: Grilled Beef Striploin",
+      "total_price": 1468.27,
+      "serving_size": 5,
+      "ingredients": [
+        "Beef Striploin, Local",
+        "Garlic, Native/Local",
+        "Chilli (Red), Local",
+        "Salt (Rock)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Beef: Stewed Beef Tongue",
+      "total_price": 1482.67,
+      "serving_size": 4,
+      "ingredients": [
+        "Beef Tongue, Local",
+        "Garlic, Native/Local",
+        "Red Onion, Local",
+        "Tomato",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Beef: Nilagang Beef Forequarter",
+      "total_price": 1273.27,
+      "serving_size": 4,
+      "ingredients": [
+        "Beef Forequarter, Local",
+        "Carrots, Local",
+        "White Potato, Local",
+        "Cabbage (Wonder Ball)",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Beef: Beef Rump Steak Garlic",
+      "total_price": 935.65,
+      "serving_size": 4,
+      "ingredients": [
+        "Beef Rump, Local",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Beef: Beef Flank Stew",
+      "total_price": 1218.05,
+      "serving_size": 4,
+      "ingredients": [
+        "Beef Flank, Local",
+        "Tomato",
+        "White Onion, Imported",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Beef: Beef Loin Roast",
+      "total_price": 1367.87,
+      "serving_size": 5,
+      "ingredients": [
+        "Beef Loin, Local",
+        "Garlic, Native/Local",
+        "Red Onion, Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Beef: Beef Rib Eye with Bell Pepper",
+      "total_price": 1446.08,
+      "serving_size": 4,
+      "ingredients": [
+        "Beef Rib Eye, Local",
+        "Bell Pepper (Green), Local",
+        "Bell Pepper (Red), Local",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Fish: Roasted Alumahan",
+      "total_price": 934.42,
+      "serving_size": 4,
+      "ingredients": [
+        "Alumahan (Indian Mackerel)",
+        "Garlic, Native/Local",
+        "Salt (Iodized)",
+        "Cooking Oil (Coconut)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Fish: Daing Bangus",
+      "total_price": 861.05,
+      "serving_size": 4,
+      "ingredients": [
+        "Bangus, Large",
+        "Garlic, Native/Local",
+        "Salt (Iodized)",
+        "Cooking Oil (Palm Olein, Jolly)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Fish: Sinigang na Bangus",
+      "total_price": 620.26,
+      "serving_size": 4,
+      "ingredients": [
+        "Bangus, Medium",
+        "Tomato",
+        "Watermelon",
+        "Calamansi",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Fish: Fried Galunggong",
+      "total_price": 1187.04,
+      "serving_size": 4,
+      "ingredients": [
+        "Galunggong, Local",
+        "Garlic, Native/Local",
+        "Red Onion, Local",
+        "Salt (Iodized)",
+        "Cooking Oil (Coconut)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Fish: Steamed Pampano",
+      "total_price": 1259.96,
+      "serving_size": 4,
+      "ingredients": [
+        "Pampano, Local",
+        "Tomato",
+        "White Onion, Imported",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Fish: Grilled Salmon Belly",
+      "total_price": 967.32,
+      "serving_size": 4,
+      "ingredients": [
+        "Salmon Belly, Imported",
+        "Garlic, Native/Local",
+        "Calamansi",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Fish: Sinigang na Salmon Head",
+      "total_price": 601.97,
+      "serving_size": 4,
+      "ingredients": [
+        "Salmon Head, Imported",
+        "Tomato",
+        "Watermelon",
+        "Calamansi",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Fish: Baked Tambakol",
+      "total_price": 1018.69,
+      "serving_size": 4,
+      "ingredients": [
+        "Tambakol (Yellow-Fin Tuna) Local",
+        "Garlic, Native/Local",
+        "Red Onion, Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Fish: Pan-Fried Tilapia",
+      "total_price": 673.62,
+      "serving_size": 4,
+      "ingredients": [
+        "Tilapia",
+        "Garlic, Native/Local",
+        "Salt (Iodized)",
+        "Cooking Oil (Palm)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Fish: Sardines in Tomato Sauce",
+      "total_price": 1029.44,
+      "serving_size": 4,
+      "ingredients": [
+        "Sardines (Tamban)",
+        "Tomato",
+        "Red Onion, Local",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Fish: Pusit Bisaya Adobo",
+      "total_price": 1070.03,
+      "serving_size": 4,
+      "ingredients": [
+        "Squid (Pusit Bisaya), Local",
+        "Garlic, Native/Local",
+        "White Onion, Imported",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Fish: Roasted Galunggong with Garlic",
+      "total_price": 754.24,
+      "serving_size": 4,
+      "ingredients": [
+        "Galunggong, Imported",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Main Courses",
+      "dish": "Fish: Grilled Pampano with Onion",
+      "total_price": 1119.34,
+      "serving_size": 4,
+      "ingredients": [
+        "Pampano, Imported",
+        "Red Onion, Local",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Vegetables/Sides",
+      "dish": "Vegetable: Ampalaya Guisado",
+      "total_price": 981.2,
+      "serving_size": 3,
+      "ingredients": [
+        "Ampalaya",
+        "Garlic, Native/Local",
+        "Red Onion, Local",
+        "Salt (Iodized)",
+        "Cooking Oil (Palm Olein, Jolly Brand)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Vegetables/Sides",
+      "dish": "Vegetable: Eggplant Omelette",
+      "total_price": 578.21,
+      "serving_size": 3,
+      "ingredients": [
+        "Eggplant",
+        "Chicken Egg (White, Medium)",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Vegetables/Sides",
+      "dish": "Vegetable: Chayote-Carrot Stir Fry",
+      "total_price": 785.13,
+      "serving_size": 3,
+      "ingredients": [
+        "Chayote",
+        "Carrots, Local",
+        "Garlic, Native/Local",
+        "Salt (Iodized)",
+        "Cooking Oil (Coconut)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Vegetables/Sides",
+      "dish": "Vegetable: Squash Guisado",
+      "total_price": 776.92,
+      "serving_size": 3,
+      "ingredients": [
+        "Squash",
+        "Red Onion, Local",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Vegetables/Sides",
+      "dish": "Vegetable: Pole Sitao with Garlic",
+      "total_price": 729.45,
+      "serving_size": 3,
+      "ingredients": [
+        "Pole Sitao",
+        "Garlic, Native/Local",
+        "White Onion, Imported",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Vegetables/Sides",
+      "dish": "Vegetable: Pechay Baguio Sauteed",
+      "total_price": 550.49,
+      "serving_size": 3,
+      "ingredients": [
+        "Pechay Baguio",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Vegetables/Sides",
+      "dish": "Vegetable: Native Pechay Sauteed",
+      "total_price": 726.07,
+      "serving_size": 3,
+      "ingredients": [
+        "Native Pechay",
+        "Tomato",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Vegetables/Sides",
+      "dish": "Vegetable: Cauliflower Buttered",
+      "total_price": 735.95,
+      "serving_size": 3,
+      "ingredients": [
+        "Cauliflower, Local",
+        "Cooking Oil (Coconut)",
+        "Salt (Iodized)",
+        "Garlic, Native/Local"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Vegetables/Sides",
+      "dish": "Vegetable: Broccoli Sauteed",
+      "total_price": 758.94,
+      "serving_size": 3,
+      "ingredients": [
+        "Broccoli, Local",
+        "Garlic, Native/Local",
+        "Salt (Iodized)",
+        "Cooking Oil (Coconut)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Vegetables/Sides",
+      "dish": "Vegetable: Cabbage & Carrots Stir-Fry",
+      "total_price": 650.94,
+      "serving_size": 3,
+      "ingredients": [
+        "Cabbage (Rare Ball)",
+        "Carrots, Local",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Vegetables/Sides",
+      "dish": "Vegetable: Lettuce Avocado Salad",
+      "total_price": 1157.94,
+      "serving_size": 3,
+      "ingredients": [
+        "Lettuce (Romaine)",
+        "Avocado",
+        "Tomato",
+        "Calamansi",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Vegetables/Sides",
+      "dish": "Vegetable: Bell Pepper Medley",
+      "total_price": 1268.41,
+      "serving_size": 3,
+      "ingredients": [
+        "Bell Pepper (Green), Local",
+        "Bell Pepper (Red), Local",
+        "Garlic, Native/Local",
+        "Red Onion, Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Vegetables/Sides",
+      "dish": "Vegetable: Celery-Carrot Stir-Fry",
+      "total_price": 746.24,
+      "serving_size": 3,
+      "ingredients": [
+        "Celery",
+        "Carrots, Local",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Vegetables/Sides",
+      "dish": "Vegetable: Mashed Potato",
+      "total_price": 711.63,
+      "serving_size": 3,
+      "ingredients": [
+        "White Potato, Local",
+        "Garlic, Native/Local",
+        "Cooking Oil (Coconut)",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Vegetables/Sides",
+      "dish": "Vegetable: Steamed Cabbage with Carrots",
+      "total_price": 643.68,
+      "serving_size": 3,
+      "ingredients": [
+        "Cabbage (Scorpio)",
+        "Carrots, Local",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Vegetables/Sides",
+      "dish": "Vegetable: Garlic Butter Pechay",
+      "total_price": 671.69,
+      "serving_size": 3,
+      "ingredients": [
+        "Native Pechay",
+        "Garlic, Native/Local",
+        "Cooking Oil (Coconut)",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Rice Dishes",
+      "dish": "Rice: Garlic Basmati Rice",
+      "total_price": 777.62,
+      "serving_size": 3,
+      "ingredients": [
+        "Basmati Rice",
+        "Garlic, Native/Local",
+        "Salt (Iodized)",
+        "Cooking Oil (Coconut)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Rice Dishes",
+      "dish": "Rice: Glutinous Rice Puto/Bibingka",
+      "total_price": 255.74,
+      "serving_size": 3,
+      "ingredients": [
+        "Glutinous Rice",
+        "Sugar (Refined)",
+        "Cooking Oil (Coconut)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": false
+    },
+    {
+      "category": "Rice Dishes",
+      "dish": "Rice: Japonica Fried Rice",
+      "total_price": 897.2,
+      "serving_size": 3,
+      "ingredients": [
+        "Jasponica/Japonica Rice",
+        "Chicken Egg (White, Medium)",
+        "Garlic, Native/Local",
+        "Red Onion, Local",
+        "Salt (Iodized)",
+        "Cooking Oil (Coconut)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Rice Dishes",
+      "dish": "Rice: Steamed White Rice",
+      "total_price": 97.42,
+      "serving_size": 3,
+      "ingredients": [
+        "Other Special Rice",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": false
+    },
+    {
+      "category": "Rice Dishes",
+      "dish": "Rice: Well-Milled Rice with Steamed Bangus",
+      "total_price": 903.41,
+      "serving_size": 3,
+      "ingredients": [
+        "Well Milled",
+        "Bangus, Medium",
+        "Garlic, Native/Local",
+        "Tomato",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Rice Dishes",
+      "dish": "Rice: Premium Rice with Roast Pork",
+      "total_price": 899.42,
+      "serving_size": 3,
+      "ingredients": [
+        "Premium",
+        "Pork Belly (Liempo), Local",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Rice Dishes",
+      "dish": "Rice: Glutinous Rice with Banana Saba",
+      "total_price": 300.96,
+      "serving_size": 3,
+      "ingredients": [
+        "Glutinous Rice",
+        "Banana (Saba)",
+        "Sugar (Brown)",
+        "Cooking Oil (Coconut)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": false
+    },
+    {
+      "category": "Rice Dishes",
+      "dish": "Rice: Basmati Garlic Fried Rice with Chicken",
+      "total_price": 1146.39,
+      "serving_size": 3,
+      "ingredients": [
+        "Basmati Rice",
+        "Chicken Thigh, Local",
+        "Garlic, Native/Local",
+        "Red Onion, Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Rice Dishes",
+      "dish": "Rice: Steamed Rice with Beef Caldereta",
+      "total_price": 1489.96,
+      "serving_size": 3,
+      "ingredients": [
+        "Other Special Rice",
+        "Beef Brisket, Local",
+        "Bell Pepper (Green), Local",
+        "Bell Pepper (Red), Local",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Rice Dishes",
+      "dish": "Rice: Japonica Rice with Stir-fried Vegetables",
+      "total_price": 723.26,
+      "serving_size": 3,
+      "ingredients": [
+        "Jasponica/Japonica Rice",
+        "Ampalaya",
+        "Carrots, Local",
+        "Garlic, Native/Local",
+        "Salt (Iodized)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Desserts/Fruits",
+      "dish": "Dessert: Fruit Salad",
+      "total_price": 1236.01,
+      "serving_size": 2,
+      "ingredients": [
+        "Mango (Carabao)",
+        "Avocado",
+        "Banana (Lakatan)",
+        "Banana (Latundan)",
+        "Melon",
+        "Papaya",
+        "Watermelon",
+        "Sugar (Refined)",
+        "Calamansi"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Desserts/Fruits",
+      "dish": "Dessert: Avocado Shake",
+      "total_price": 568.38,
+      "serving_size": 2,
+      "ingredients": [
+        "Avocado",
+        "Sugar (Refined)",
+        "Watermelon"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Desserts/Fruits",
+      "dish": "Dessert: Banana Saba Turon",
+      "total_price": 238.24,
+      "serving_size": 2,
+      "ingredients": [
+        "Banana (Saba)",
+        "Sugar (Brown)",
+        "Cooking Oil (Coconut)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": false
+    },
+    {
+      "category": "Desserts/Fruits",
+      "dish": "Dessert: Pomelo-Calamansi Fruit Salad",
+      "total_price": 357.25,
+      "serving_size": 2,
+      "ingredients": [
+        "Pomelo",
+        "Calamansi",
+        "Sugar (Refined)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": false
+    },
+    {
+      "category": "Desserts/Fruits",
+      "dish": "Dessert: Melon & Watermelon Refreshing Drink",
+      "total_price": 267.28,
+      "serving_size": 2,
+      "ingredients": [
+        "Melon",
+        "Watermelon",
+        "Sugar (Refined)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": false
+    },
+    {
+      "category": "Desserts/Fruits",
+      "dish": "Dessert: Banana & Mango Compote",
+      "total_price": 385.34,
+      "serving_size": 2,
+      "ingredients": [
+        "Banana (Lakatan)",
+        "Mango (Carabao)",
+        "Sugar (Brown)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": false
+    },
+    {
+      "category": "Desserts/Fruits",
+      "dish": "Dessert: Papaya-Melon Fruit Cups",
+      "total_price": 261.72,
+      "serving_size": 2,
+      "ingredients": [
+        "Papaya",
+        "Melon",
+        "Sugar (Refined)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": false
+    },
+    {
+      "category": "Desserts/Fruits",
+      "dish": "Dessert: Watermelon Juice",
+      "total_price": 260.8,
+      "serving_size": 2,
+      "ingredients": [
+        "Watermelon",
+        "Sugar (Refined)",
+        "Calamansi"
+      ],
+      "missing_ingredients": [],
+      "price_warning": false
+    },
+    {
+      "category": "Desserts/Fruits",
+      "dish": "Dessert: Tropical Fruit Medley",
+      "total_price": 617.55,
+      "serving_size": 2,
+      "ingredients": [
+        "Mango (Carabao)",
+        "Banana (Latundan)",
+        "Papaya",
+        "Pomelo",
+        "Sugar (Refined)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    },
+    {
+      "category": "Desserts/Fruits",
+      "dish": "Dessert: Avocado-Banana Cream",
+      "total_price": 588.24,
+      "serving_size": 2,
+      "ingredients": [
+        "Avocado",
+        "Banana (Lakatan)",
+        "Sugar (Refined)"
+      ],
+      "missing_ingredients": [],
+      "price_warning": true
+    }
+  ]
+}

@@ -1,0 +1,479 @@
+date,category,item_name,specification,price
+2025-12-04,BEEF MEAT PRODUCTS,"Beef Brisket, Imported",,380.0
+2025-12-04,BEEF MEAT PRODUCTS,"Beef Brisket, Local",Meat with Bones,426.01
+2025-12-04,BEEF MEAT PRODUCTS,"Beef Chuck, Local",,412.5
+2025-12-04,BEEF MEAT PRODUCTS,"Beef Flank, Imported",,376.67
+2025-12-04,BEEF MEAT PRODUCTS,"Beef Flank, Local",,461.0
+2025-12-04,BEEF MEAT PRODUCTS,"Beef Fore Limb, Local",,460.0
+2025-12-04,BEEF MEAT PRODUCTS,"Beef Forequarter, Local",,490.0
+2025-12-04,BEEF MEAT PRODUCTS,"Beef Loin, Local",,485.0
+2025-12-04,BEEF MEAT PRODUCTS,"Beef Plate, Local",,415.71
+2025-12-04,BEEF MEAT PRODUCTS,"Beef Rib Eye, Local",,436.43
+2025-12-04,BEEF MEAT PRODUCTS,"Beef Rib Set, Local",,410.3
+2025-12-04,BEEF MEAT PRODUCTS,"Beef Rump, Imported",,375.0
+2025-12-04,BEEF MEAT PRODUCTS,"Beef Rump, Local",Lean Meat/ Tapadera,482.81
+2025-12-04,BEEF MEAT PRODUCTS,"Beef Short Ribs, Local",,422.25
+2025-12-04,BEEF MEAT PRODUCTS,"Beef Sirloin, Local",,483.18
+2025-12-04,BEEF MEAT PRODUCTS,"Beef Striploin, Local",,470.0
+2025-12-04,BEEF MEAT PRODUCTS,"Beef Tenderloin, Imported",,400.0
+2025-12-04,BEEF MEAT PRODUCTS,"Beef Tenderloin, Local",,665.0
+2025-12-04,BEEF MEAT PRODUCTS,"Beef Tongue, Local",,536.0
+2025-12-04,CORN PRODUCTS,Corn (White),"Cob, Glutinous",120.83
+2025-12-04,CORN PRODUCTS,Corn (Yellow),"Cob, Sweet Corn",91.63
+2025-12-04,CORN PRODUCTS,"Corn Cracked (Yellow, Feed Grade)",,50.0
+2025-12-04,CORN PRODUCTS,Corn Grits (Feed Grade),,47.5
+2025-12-04,CORN PRODUCTS,"Corn Grits (White, Food Grade)",,120.0
+2025-12-04,CORN PRODUCTS,"Corn Grits (Yellow, Food Grade)",,120.0
+2025-12-04,FISH PRODUCTS,Alumahan (Indian Mackerel),Medium (4-6 pcs/kg),350.0
+2025-12-04,FISH PRODUCTS,"Bangus, Large",Large (1-2 pcs),268.45
+2025-12-04,FISH PRODUCTS,"Bangus, Medium",Medium (3-4 pcs/kg),238.85
+2025-12-04,FISH PRODUCTS,"Galunggong, Imported","Male, Medium (12-14 pcs/kg)",318.8
+2025-12-04,FISH PRODUCTS,"Galunggong, Local","Male, Medium (12-14 pcs/kg)",354.24
+2025-12-04,FISH PRODUCTS,"Pampano, Imported",,409.77
+2025-12-04,FISH PRODUCTS,"Pampano, Local",,505.0
+2025-12-04,FISH PRODUCTS,"Salmon Belly, Imported",,428.04
+2025-12-04,FISH PRODUCTS,"Salmon Head, Imported",,225.84
+2025-12-04,FISH PRODUCTS,Sardines (Tamban),,152.73
+2025-12-04,FISH PRODUCTS,"Squid (Pusit Bisaya), Local",Medium,457.66
+2025-12-04,FISH PRODUCTS,"Squid, Imported",,227.5
+2025-12-04,FISH PRODUCTS,Tambakol (Yellow-Fin Tuna) Imported,"Medium, Frozen",286.67
+2025-12-04,FISH PRODUCTS,Tambakol (Yellow-Fin Tuna) Local,"Medium, Fresh or Chilled",296.13
+2025-12-04,FISH PRODUCTS,Tilapia,Medium (5-6 pcs/kg),153.44
+2025-12-04,FRUITS,Avocado,,408.8
+2025-12-04,FRUITS,Banana (Lakatan),8-10 pcs/kg,97.69
+2025-12-04,FRUITS,Banana (Latundan),10–12 pcs/kg,76.22
+2025-12-04,FRUITS,Banana (Saba),,53.38
+2025-12-04,FRUITS,Calamansi,,109.29
+2025-12-04,FRUITS,Mango (Carabao),"Ripe, 3-4 pcs/kg",213.93
+2025-12-04,FRUITS,Melon,,107.03
+2025-12-04,FRUITS,Papaya,"Solo, Ripe, 2-3 pcs/kg",70.65
+2025-12-04,FRUITS,Pomelo,,182.5
+2025-12-04,FRUITS,Watermelon,,78.79
+2025-12-04,HIGHLAND VEGETABLES,"Bell Pepper (Green), Local",Medium (151-250gm/pc),275.68
+2025-12-04,HIGHLAND VEGETABLES,"Bell Pepper (Red), Local",Medium (151-250gm/pc),259.21
+2025-12-04,HIGHLAND VEGETABLES,"Broccoli, Imported",,406.59
+2025-12-04,HIGHLAND VEGETABLES,"Broccoli, Local",Medium (8–10 cm diameter/bunch hd),347.14
+2025-12-04,HIGHLAND VEGETABLES,Cabbage (Rare Ball),510 gm - 1 kg/head,84.1
+2025-12-04,HIGHLAND VEGETABLES,Cabbage (Scorpio),750 gm - 1 kg/head,82.86
+2025-12-04,HIGHLAND VEGETABLES,Cabbage (Wonder Ball),510 gm - 1 kg/head,81.35
+2025-12-04,HIGHLAND VEGETABLES,"Cabbage, Imported",,125.0
+2025-12-04,HIGHLAND VEGETABLES,"Carrots, Imported",,120.0
+2025-12-04,HIGHLAND VEGETABLES,"Carrots, Local",8-10 pcs/kg,129.12
+2025-12-04,HIGHLAND VEGETABLES,"Cauliflower, Imported",,286.67
+2025-12-04,HIGHLAND VEGETABLES,"Cauliflower, Local",mrr(/%ciflx 4),291.41
+2025-12-04,HIGHLAND VEGETABLES,Celery,Medium (501-800 g),180.21
+2025-12-04,HIGHLAND VEGETABLES,Chayote,Medium (301-400 g),116.62
+2025-12-04,HIGHLAND VEGETABLES,"Chilli (Red), Local",Tingala,611.39
+2025-12-04,HIGHLAND VEGETABLES,"Garlic, Imported",,154.38
+2025-12-04,HIGHLAND VEGETABLES,"Garlic, Native/Local",,400.0
+2025-12-04,HIGHLAND VEGETABLES,"Ginger, Imported","Fairly well-matured, medium (150–300 g)",176.67
+2025-12-04,HIGHLAND VEGETABLES,"Ginger, Local","Fairly well-matured, medium (150–300 g)",182.32
+2025-12-04,HIGHLAND VEGETABLES,"Habichuelas/Baguio Beans, Local",,334.96
+2025-12-04,HIGHLAND VEGETABLES,Lettuce (Green Ice),,333.68
+2025-12-04,HIGHLAND VEGETABLES,Lettuce (Iceberg),Medium (301–450 g/bunch),356.49
+2025-12-04,HIGHLAND VEGETABLES,Lettuce (Romaine),,313.13
+2025-12-04,HIGHLAND VEGETABLES,Pechay Baguio,,86.29
+2025-12-04,HIGHLAND VEGETABLES,"Red Onion, Imported",Large,138.72
+2025-12-04,HIGHLAND VEGETABLES,"Red Onion, Imported",Medium,226.44
+2025-12-04,HIGHLAND VEGETABLES,"Red Onion, Local",13–15 pcs/kg,278.24
+2025-12-04,HIGHLAND VEGETABLES,"White Onion, Imported",Large,125.1
+2025-12-04,HIGHLAND VEGETABLES,"White Onion, Imported",Medium,137.81
+2025-12-04,HIGHLAND VEGETABLES,"White Potato, Local",10–12 pcs/kg,153.72
+2025-12-04,IMPORTED COMMERCIAL RICE,Basmati Rice,,211.0
+2025-12-04,IMPORTED COMMERCIAL RICE,Glutinous Rice,,61.16
+2025-12-04,IMPORTED COMMERCIAL RICE,Jasponica/Japonica Rice,,60.43
+2025-12-04,IMPORTED COMMERCIAL RICE,Other Special Rice,White Rice,58.96
+2025-12-04,IMPORTED COMMERCIAL RICE,Premium,5% broken,50.23
+2025-12-04,IMPORTED COMMERCIAL RICE,Regular Milled,20-40% bran streak,38.81
+2025-12-04,IMPORTED COMMERCIAL RICE,Well Milled,1-19 bran streak,45.33
+2025-12-04,LOCAL COMMERCIAL RICE,Glutinous Rice,,70.37
+2025-12-04,LOCAL COMMERCIAL RICE,Other Special Rice,White Rice,57.17
+2025-12-04,LOCAL COMMERCIAL RICE,Premium,5% broken,49.84
+2025-12-04,LOCAL COMMERCIAL RICE,Regular Milled,20-40% bran streak,38.48
+2025-12-04,LOCAL COMMERCIAL RICE,Well Milled,1-19 bran streak,43.5
+2025-12-04,LOWLAND VEGETABLES,Ampalaya,4-5pcs/kg,224.31
+2025-12-04,LOWLAND VEGETABLES,"Chilli (Green), Local",Haba/Panigang,332.4
+2025-12-04,LOWLAND VEGETABLES,Eggplant,3-4 Small Bundles,203.99
+2025-12-04,LOWLAND VEGETABLES,Native Pechay,3-4 Small Bundles,122.22
+2025-12-04,LOWLAND VEGETABLES,Pole Sitao,3-4 Small Bundles,151.96
+2025-12-04,LOWLAND VEGETABLES,Squash,Suprema Variety,57.54
+2025-12-04,LOWLAND VEGETABLES,Tomato,15–18 pcs/kg,137.45
+2025-12-04,OTHER BASIC COMMODITIES,Cooking Oil (Coconut),350 ml/bottle,59.28
+2025-12-04,OTHER BASIC COMMODITIES,Cooking Oil (Coconut),1 Liter/bottle,162.24
+2025-12-04,OTHER BASIC COMMODITIES,Cooking Oil (Minola),500 ml/bottle,90.0
+2025-12-04,OTHER BASIC COMMODITIES,Cooking Oil (Minola),"1,000 ml/bottle",140.0
+2025-12-04,OTHER BASIC COMMODITIES,"Cooking Oil (Palm Olein, Jolly)","1,000 ml/bottle",143.33
+2025-12-04,OTHER BASIC COMMODITIES,Cooking Oil (Palm),350 ml/bottle,35.79
+2025-12-04,OTHER BASIC COMMODITIES,Cooking Oil (Palm),1 Liter/bottle,91.02
+2025-12-04,OTHER BASIC COMMODITIES,Cooking Oil (Spring),500 ml/bottle,75.0
+2025-12-04,OTHER BASIC COMMODITIES,Cooking Oil (Spring),"1,000 ml/bottle",150.71
+2025-12-04,OTHER BASIC COMMODITIES,Salt (Iodized),,39.0
+2025-12-04,OTHER BASIC COMMODITIES,Salt (Rock),,21.24
+2025-12-04,OTHER BASIC COMMODITIES,Sugar (Brown),,73.55
+2025-12-04,OTHER BASIC COMMODITIES,Sugar (Refined),,81.65
+2025-12-04,OTHER BASIC COMMODITIES,Sugar (Washed),,75.1
+2025-12-04,OTHER LIVESTOCK MEAT PRODUCTS,"Carabeef Forequarter, Local",,330.0
+2025-12-04,OTHER LIVESTOCK MEAT PRODUCTS,"Carabeef Meat, Local",,355.0
+2025-12-04,OTHER LIVESTOCK MEAT PRODUCTS,"Carabeef Rump Steak, Local",,385.0
+2025-12-04,OTHER LIVESTOCK MEAT PRODUCTS,"Carabeef Trimmings, Local",,350.0
+2025-12-04,PORK MEAT PRODUCTS,"Pork Belly (Liempo), Imported",,311.86
+2025-12-04,PORK MEAT PRODUCTS,"Pork Belly (Liempo), Local",,394.3
+2025-12-04,PORK MEAT PRODUCTS,"Pork Boston Shoulder, Local",,358.15
+2025-12-04,PORK MEAT PRODUCTS,"Pork Chop, Imported",,254.69
+2025-12-04,PORK MEAT PRODUCTS,"Pork Chop, Local",,343.5
+2025-12-04,PORK MEAT PRODUCTS,"Pork Fore Shank, Imported",,191.43
+2025-12-04,PORK MEAT PRODUCTS,"Pork Fore Shank, Local",,324.37
+2025-12-04,PORK MEAT PRODUCTS,"Pork Head, Imported",,200.0
+2025-12-04,PORK MEAT PRODUCTS,"Pork Head, Local",,251.71
+2025-12-04,PORK MEAT PRODUCTS,"Pork Hind Leg (Pigue), Imported",,256.25
+2025-12-04,PORK MEAT PRODUCTS,"Pork Hind Leg (Pigue), Local",,342.28
+2025-12-04,PORK MEAT PRODUCTS,"Pork Hind Shank, Imported",,190.0
+2025-12-04,PORK MEAT PRODUCTS,"Pork Hind Shank, Local",,324.92
+2025-12-04,PORK MEAT PRODUCTS,"Pork Loin, Imported",,278.0
+2025-12-04,PORK MEAT PRODUCTS,"Pork Loin, Local",,386.76
+2025-12-04,PORK MEAT PRODUCTS,"Pork Offals, Imported",,139.41
+2025-12-04,PORK MEAT PRODUCTS,"Pork Offals, Local",,252.99
+2025-12-04,PORK MEAT PRODUCTS,"Pork Picnic Shoulder, Imported (Kasim)",,256.35
+2025-12-04,PORK MEAT PRODUCTS,"Pork Picnic Shoulder, Local (Kasim)",,341.41
+2025-12-04,PORK MEAT PRODUCTS,"Pork Rind/Skin, Local",,111.43
+2025-12-04,PORK MEAT PRODUCTS,"Pork Spare Ribs, Imported",,237.5
+2025-12-04,PORK MEAT PRODUCTS,"Pork Spare Ribs, Local",,334.96
+2025-12-04,POULTRY PRODUCTS,"Chicken Breast, Local","Unbranded, Fresh",209.55
+2025-12-04,POULTRY PRODUCTS,"Chicken Breast, Local",Magnolia,221.7
+2025-12-04,POULTRY PRODUCTS,"Chicken Breast, Local",Bounty Fresh,235.0
+2025-12-04,POULTRY PRODUCTS,"Chicken Drumstick, Local","Unbranded, Fresh",217.02
+2025-12-04,POULTRY PRODUCTS,"Chicken Drumstick, Local",Magnolia,227.5
+2025-12-04,POULTRY PRODUCTS,"Chicken Drumstick, Local",Bounty Fresh,236.0
+2025-12-04,POULTRY PRODUCTS,"Chicken Egg (White, Medium)",56-60 grams/pc,8.25
+2025-12-04,POULTRY PRODUCTS,"Chicken Feet, Local",,149.1
+2025-12-04,POULTRY PRODUCTS,Chicken Leg Quarter,"Unbranded, Fresh",210.54
+2025-12-04,POULTRY PRODUCTS,Chicken Leg Quarter,Magnolia,224.42
+2025-12-04,POULTRY PRODUCTS,Chicken Leg Quarter,Bounty Fresh,235.0
+2025-12-04,POULTRY PRODUCTS,"Chicken Leg Quarter, Imported",,165.0
+2025-12-04,POULTRY PRODUCTS,"Chicken Liver, Local",,237.4
+2025-12-04,POULTRY PRODUCTS,"Chicken Neck, Local",,146.41
+2025-12-04,POULTRY PRODUCTS,"Chicken Rind/Skin, Local",,147.73
+2025-12-04,POULTRY PRODUCTS,"Chicken Thigh, Local",,217.88
+2025-12-04,POULTRY PRODUCTS,"Chicken Wing, Local","Unbranded, Fresh",218.91
+2025-12-04,POULTRY PRODUCTS,"Chicken Wing, Local",Magnolia,228.17
+2025-12-04,POULTRY PRODUCTS,"Chicken Wing, Local",Bounty Fresh,232.5
+2025-12-04,POULTRY PRODUCTS,"Whole Chicken, Local",Fully Dressed,201.74
+2025-12-04,POULTRY PRODUCTS,"Whole Chicken, Local",Magnolia,214.4
+2025-12-04,POULTRY PRODUCTS,"Whole Chicken, Local",Bounty Fresh,217.5
+2025-12-11,BEEF MEAT PRODUCTS,"Beef Brisket, Imported",,380.0
+2025-12-11,BEEF MEAT PRODUCTS,"Beef Brisket, Local",Meat with Bones,425.0
+2025-12-11,BEEF MEAT PRODUCTS,"Beef Chuck, Local",,412.5
+2025-12-11,BEEF MEAT PRODUCTS,"Beef Flank, Imported",,376.67
+2025-12-11,BEEF MEAT PRODUCTS,"Beef Flank, Local",,461.0
+2025-12-11,BEEF MEAT PRODUCTS,"Beef Fore Limb, Local",,460.0
+2025-12-11,BEEF MEAT PRODUCTS,"Beef Forequarter, Local",,490.0
+2025-12-11,BEEF MEAT PRODUCTS,"Beef Loin, Local",,584.29
+2025-12-11,BEEF MEAT PRODUCTS,"Beef Plate, Local",,415.71
+2025-12-11,BEEF MEAT PRODUCTS,"Beef Rib Eye, Local",,430.0
+2025-12-11,BEEF MEAT PRODUCTS,"Beef Rib Set, Local",,410.3
+2025-12-11,BEEF MEAT PRODUCTS,"Beef Rump, Imported",,375.0
+2025-12-11,BEEF MEAT PRODUCTS,"Beef Rump, Local",Lean Meat/ Tapadera,480.72
+2025-12-11,BEEF MEAT PRODUCTS,"Beef Short Ribs, Local",,422.25
+2025-12-11,BEEF MEAT PRODUCTS,"Beef Sirloin, Local",,478.9
+2025-12-11,BEEF MEAT PRODUCTS,"Beef Striploin, Local",,467.39
+2025-12-11,BEEF MEAT PRODUCTS,"Beef Tenderloin, Imported",,400.0
+2025-12-11,BEEF MEAT PRODUCTS,"Beef Tenderloin, Local",,660.67
+2025-12-11,BEEF MEAT PRODUCTS,"Beef Tongue, Local",,546.0
+2025-12-11,CORN PRODUCTS,Corn (White),"Cob, Glutinous",106.43
+2025-12-11,CORN PRODUCTS,Corn (Yellow),"Cob, Sweet Corn",94.35
+2025-12-11,CORN PRODUCTS,"Corn Cracked (Yellow, Feed Grade)",,50.0
+2025-12-11,CORN PRODUCTS,Corn Grits (Feed Grade),,47.5
+2025-12-11,CORN PRODUCTS,"Corn Grits (White, Food Grade)",,120.0
+2025-12-11,CORN PRODUCTS,"Corn Grits (Yellow, Food Grade)",,120.0
+2025-12-11,FISH PRODUCTS,Alumahan (Indian Mackerel),Medium (4-6 pcs/kg),362.69
+2025-12-11,FISH PRODUCTS,"Bangus, Large",Large (1-2 pcs),263.11
+2025-12-11,FISH PRODUCTS,"Bangus, Medium",Medium (3-4 pcs/kg),235.64
+2025-12-11,FISH PRODUCTS,"Galunggong, Imported","Male, Medium (12-14 pcs/kg)",306.96
+2025-12-11,FISH PRODUCTS,"Galunggong, Local","Male, Medium (12-14 pcs/kg)",364.12
+2025-12-11,FISH PRODUCTS,"Pampano, Imported",,406.67
+2025-12-11,FISH PRODUCTS,"Pampano, Local",,507.65
+2025-12-11,FISH PRODUCTS,"Salmon Belly, Imported",,420.18
+2025-12-11,FISH PRODUCTS,"Salmon Head, Imported",,224.43
+2025-12-11,FISH PRODUCTS,Sardines (Tamban),,145.45
+2025-12-11,FISH PRODUCTS,"Squid (Pusit Bisaya), Local",Medium,485.0
+2025-12-11,FISH PRODUCTS,"Squid, Imported",,216.43
+2025-12-11,FISH PRODUCTS,Tambakol (Yellow-Fin Tuna) Local,"Medium, Fresh or Chilled",299.38
+2025-12-11,FISH PRODUCTS,Tilapia,Medium (5-6 pcs/kg),154.39
+2025-12-11,FRUITS,Avocado,,415.19
+2025-12-11,FRUITS,Banana (Lakatan),8-10 pcs/kg,97.06
+2025-12-11,FRUITS,Banana (Latundan),10–12 pcs/kg,75.0
+2025-12-11,FRUITS,Banana (Saba),,52.7
+2025-12-11,FRUITS,Calamansi,,106.87
+2025-12-11,FRUITS,Mango (Carabao),"Ripe, 3-4 pcs/kg",213.99
+2025-12-11,FRUITS,Melon,,107.46
+2025-12-11,FRUITS,Papaya,"Solo, Ripe, 2-3 pcs/kg",70.1
+2025-12-11,FRUITS,Pomelo,,182.14
+2025-12-11,FRUITS,Watermelon,,79.42
+2025-12-11,HIGHLAND VEGETABLES,"Bell Pepper (Green), Local",Medium (151-250gm/pc),277.36
+2025-12-11,HIGHLAND VEGETABLES,"Bell Pepper (Red), Local",Medium (151-250gm/pc),245.45
+2025-12-11,HIGHLAND VEGETABLES,"Broccoli, Imported",,318.35
+2025-12-11,HIGHLAND VEGETABLES,"Broccoli, Local",Medium (8–10 cm diameter/bunch hd),286.67
+2025-12-11,HIGHLAND VEGETABLES,Cabbage (Rare Ball),510 gm - 1 kg/head,86.76
+2025-12-11,HIGHLAND VEGETABLES,Cabbage (Scorpio),750 gm - 1 kg/head,83.48
+2025-12-11,HIGHLAND VEGETABLES,Cabbage (Wonder Ball),510 gm - 1 kg/head,72.89
+2025-12-11,HIGHLAND VEGETABLES,"Cabbage, Imported",,133.33
+2025-12-11,HIGHLAND VEGETABLES,"Carrots, Imported",,108.66
+2025-12-11,HIGHLAND VEGETABLES,"Carrots, Local",8-10 pcs/kg,122.68
+2025-12-11,HIGHLAND VEGETABLES,"Cauliflower, Imported",,216.67
+2025-12-11,HIGHLAND VEGETABLES,"Cauliflower, Local",mrr(/%ciflx 4),251.03
+2025-12-11,HIGHLAND VEGETABLES,Celery,Medium (501-800 g),179.32
+2025-12-11,HIGHLAND VEGETABLES,Chayote,Medium (301-400 g),113.86
+2025-12-11,HIGHLAND VEGETABLES,"Chilli (Red), Local",Tingala,563.15
+2025-12-11,HIGHLAND VEGETABLES,"Garlic, Imported",,152.18
+2025-12-11,HIGHLAND VEGETABLES,"Garlic, Native/Local",,416.67
+2025-12-11,HIGHLAND VEGETABLES,"Ginger, Imported","Fairly well-matured, medium (150–300 g)",170.47
+2025-12-11,HIGHLAND VEGETABLES,"Ginger, Local","Fairly well-matured, medium (150–300 g)",173.64
+2025-12-11,HIGHLAND VEGETABLES,"Habichuelas/Baguio Beans, Local",,331.07
+2025-12-11,HIGHLAND VEGETABLES,Lettuce (Green Ice),,329.14
+2025-12-11,HIGHLAND VEGETABLES,Lettuce (Iceberg),Medium (301–450 g/bunch),405.71
+2025-12-11,HIGHLAND VEGETABLES,Lettuce (Romaine),,357.56
+2025-12-11,HIGHLAND VEGETABLES,Pechay Baguio,,85.08
+2025-12-11,HIGHLAND VEGETABLES,"Red Onion, Imported",Large,129.76
+2025-12-11,HIGHLAND VEGETABLES,"Red Onion, Imported",Medium,212.68
+2025-12-11,HIGHLAND VEGETABLES,"Red Onion, Local",13–15 pcs/kg,279.17
+2025-12-11,HIGHLAND VEGETABLES,"White Onion, Imported",Large,122.65
+2025-12-11,HIGHLAND VEGETABLES,"White Onion, Imported",Medium,137.31
+2025-12-11,HIGHLAND VEGETABLES,"White Potato, Local",10–12 pcs/kg,150.87
+2025-12-11,IMPORTED COMMERCIAL RICE,Basmati Rice,,211.0
+2025-12-11,IMPORTED COMMERCIAL RICE,Glutinous Rice,,62.25
+2025-12-11,IMPORTED COMMERCIAL RICE,Jasponica/Japonica Rice,,61.32
+2025-12-11,IMPORTED COMMERCIAL RICE,Other Special Rice,White Rice,59.19
+2025-12-11,IMPORTED COMMERCIAL RICE,Premium,5% broken,50.24
+2025-12-11,IMPORTED COMMERCIAL RICE,Regular Milled,20-40% bran streak,38.83
+2025-12-11,IMPORTED COMMERCIAL RICE,Well Milled,1-19 bran streak,44.75
+2025-12-11,LEGUMES,Mungbean,,130.26
+2025-12-11,LOCAL COMMERCIAL RICE,Glutinous Rice,,73.66
+2025-12-11,LOCAL COMMERCIAL RICE,Other Special Rice,White Rice,57.37
+2025-12-11,LOCAL COMMERCIAL RICE,Premium,5% broken,50.34
+2025-12-11,LOCAL COMMERCIAL RICE,Regular Milled,20-40% bran streak,38.29
+2025-12-11,LOCAL COMMERCIAL RICE,Well Milled,1-19 bran streak,43.74
+2025-12-11,LOWLAND VEGETABLES,Ampalaya,4-5pcs/kg,162.76
+2025-12-11,LOWLAND VEGETABLES,"Chilli (Green), Local",Haba/Panigang,358.63
+2025-12-11,LOWLAND VEGETABLES,Eggplant,3-4 Small Bundles,160.31
+2025-12-11,LOWLAND VEGETABLES,Native Pechay,3-4 Small Bundles,116.56
+2025-12-11,LOWLAND VEGETABLES,Pole Sitao,3-4 Small Bundles,150.95
+2025-12-11,LOWLAND VEGETABLES,Squash,Suprema Variety,59.17
+2025-12-11,LOWLAND VEGETABLES,Tomato,15–18 pcs/kg,137.17
+2025-12-11,OTHER BASIC COMMODITIES,Cooking Oil (Coconut),350 ml/bottle,60.97
+2025-12-11,OTHER BASIC COMMODITIES,Cooking Oil (Coconut),1 Liter/bottle,161.02
+2025-12-11,OTHER BASIC COMMODITIES,"Cooking Oil (Palm Olein, Jolly Brand)","1,000 ml/bottle",141.25
+2025-12-11,OTHER BASIC COMMODITIES,Cooking Oil (Palm),350 ml/bottle,36.08
+2025-12-11,OTHER BASIC COMMODITIES,Cooking Oil (Palm),1 Liter/bottle,90.31
+2025-12-11,OTHER BASIC COMMODITIES,Cooking Oil (Spring),500 ml/bottle,75.0
+2025-12-11,OTHER BASIC COMMODITIES,Cooking Oil (Spring),"1,000 ml/bottle",152.5
+2025-12-11,OTHER BASIC COMMODITIES,Salt (Iodized),,37.63
+2025-12-11,OTHER BASIC COMMODITIES,Salt (Rock),,21.05
+2025-12-11,OTHER BASIC COMMODITIES,Sugar (Refined),,81.92
+2025-12-11,OTHER BASIC COMMODITIES,Sugar (Washed),,75.33
+2025-12-11,OTHER LIVESTOCK MEAT PRODUCTS,"Carabeef Forequarter, Local",,330.0
+2025-12-11,OTHER LIVESTOCK MEAT PRODUCTS,"Carabeef Meat, Local",,362.5
+2025-12-11,OTHER LIVESTOCK MEAT PRODUCTS,"Carabeef Rump Steak, Local",,385.0
+2025-12-11,OTHER LIVESTOCK MEAT PRODUCTS,"Carabeef Trimmings, Local",,350.0
+2025-12-11,PORK MEAT PRODUCTS,"Pork Belly (Liempo), Local",,393.01
+2025-12-11,PORK MEAT PRODUCTS,"Pork Boston Shoulder, Local",,357.65
+2025-12-11,PORK MEAT PRODUCTS,"Pork Chop, Imported",,254.69
+2025-12-11,PORK MEAT PRODUCTS,"Pork Chop, Local",,343.23
+2025-12-11,PORK MEAT PRODUCTS,"Pork Fore Shank, Imported",,191.43
+2025-12-11,PORK MEAT PRODUCTS,"Pork Fore Shank, Local",,325.19
+2025-12-11,PORK MEAT PRODUCTS,"Pork Head, Imported",,200.0
+2025-12-11,PORK MEAT PRODUCTS,"Pork Head, Local",,251.05
+2025-12-11,PORK MEAT PRODUCTS,"Pork Hind Leg (Pigue), Imported",,256.09
+2025-12-11,PORK MEAT PRODUCTS,"Pork Hind Leg (Pigue), Local",,341.54
+2025-12-11,PORK MEAT PRODUCTS,"Pork Hind Shank, Imported",,210.0
+2025-12-11,PORK MEAT PRODUCTS,"Pork Hind Shank, Local",,318.57
+2025-12-11,PORK MEAT PRODUCTS,"Pork Loin, Imported",,278.0
+2025-12-11,PORK MEAT PRODUCTS,"Pork Loin, Local",,387.13
+2025-12-11,PORK MEAT PRODUCTS,"Pork Offals, Imported",,140.59
+2025-12-11,PORK MEAT PRODUCTS,"Pork Offals, Local",,251.0
+2025-12-11,PORK MEAT PRODUCTS,"Pork Picnic Shoulder, Imported (Kasim)",,255.2
+2025-12-11,PORK MEAT PRODUCTS,"Pork Picnic Shoulder, Local (Kasim)",,341.05
+2025-12-11,PORK MEAT PRODUCTS,"Pork Rind/Skin, Local",,107.27
+2025-12-11,PORK MEAT PRODUCTS,"Pork Spare Ribs, Imported",,239.17
+2025-12-11,PORK MEAT PRODUCTS,"Pork Spare Ribs, Local",,335.53
+2025-12-11,POULTRY PRODUCTS,"Chicken Breast, Local","Unbranded, Fresh",213.28
+2025-12-11,POULTRY PRODUCTS,"Chicken Breast, Local",Magnolia,223.46
+2025-12-11,POULTRY PRODUCTS,"Chicken Breast, Local",Bounty Fresh,235.0
+2025-12-11,POULTRY PRODUCTS,"Chicken Drumstick, Local","Unbranded, Fresh",221.73
+2025-12-11,POULTRY PRODUCTS,"Chicken Drumstick, Local",Magnolia,229.02
+2025-12-11,POULTRY PRODUCTS,"Chicken Drumstick, Local",Bounty Fresh,236.0
+2025-12-11,POULTRY PRODUCTS,"Chicken Egg (White, Medium)",56-60 grams/pc,8.29
+2025-12-11,POULTRY PRODUCTS,"Chicken Feet, Local",,146.75
+2025-12-11,POULTRY PRODUCTS,Chicken Leg Quarter,"Unbranded, Fresh",213.17
+2025-12-11,POULTRY PRODUCTS,Chicken Leg Quarter,Magnolia,226.47
+2025-12-11,POULTRY PRODUCTS,Chicken Leg Quarter,Bounty Fresh,235.0
+2025-12-11,POULTRY PRODUCTS,"Chicken Leg Quarter, Imported",,165.0
+2025-12-11,POULTRY PRODUCTS,"Chicken Liver, Local",,236.18
+2025-12-11,POULTRY PRODUCTS,"Chicken Neck, Local",,141.65
+2025-12-11,POULTRY PRODUCTS,"Chicken Rind/Skin, Local",,150.0
+2025-12-11,POULTRY PRODUCTS,"Chicken Thigh, Local",,219.86
+2025-12-11,POULTRY PRODUCTS,"Chicken Wing, Local","Unbranded, Fresh",223.67
+2025-12-11,POULTRY PRODUCTS,"Chicken Wing, Local",Magnolia,229.9
+2025-12-11,POULTRY PRODUCTS,"Chicken Wing, Local",Bounty Fresh,236.67
+2025-12-11,POULTRY PRODUCTS,"Whole Chicken, Local",Fully Dressed,205.13
+2025-12-11,POULTRY PRODUCTS,"Whole Chicken, Local",Magnolia,214.59
+2025-12-11,POULTRY PRODUCTS,"Whole Chicken, Local",Bounty Fresh,217.5
+2025-12-17,BEEF MEAT PRODUCTS,"Beef Brisket, Imported",,380.0
+2025-12-17,BEEF MEAT PRODUCTS,"Beef Brisket, Local",Meat with Bones,423.69
+2025-12-17,BEEF MEAT PRODUCTS,"Beef Chuck, Local",,413.44
+2025-12-17,BEEF MEAT PRODUCTS,"Beef Flank, Imported",,376.67
+2025-12-17,BEEF MEAT PRODUCTS,"Beef Flank, Local",,466.47
+2025-12-17,BEEF MEAT PRODUCTS,"Beef Fore Limb, Local",,462.5
+2025-12-17,BEEF MEAT PRODUCTS,"Beef Forequarter, Local",,490.0
+2025-12-17,BEEF MEAT PRODUCTS,"Beef Loin, Local",,581.67
+2025-12-17,BEEF MEAT PRODUCTS,"Beef Plate, Local",,403.64
+2025-12-17,BEEF MEAT PRODUCTS,"Beef Rib Eye, Local",,439.17
+2025-12-17,BEEF MEAT PRODUCTS,"Beef Rib Set, Local",,407.0
+2025-12-17,BEEF MEAT PRODUCTS,"Beef Rump, Imported",,375.0
+2025-12-17,BEEF MEAT PRODUCTS,"Beef Rump, Local",Lean Meat/ Tapadera,481.05
+2025-12-17,BEEF MEAT PRODUCTS,"Beef Short Ribs, Local",,420.88
+2025-12-17,BEEF MEAT PRODUCTS,"Beef Sirloin, Local",,480.78
+2025-12-17,BEEF MEAT PRODUCTS,"Beef Striploin, Local",,455.0
+2025-12-17,BEEF MEAT PRODUCTS,"Beef Tenderloin, Imported",,400.0
+2025-12-17,BEEF MEAT PRODUCTS,"Beef Tenderloin, Local",,665.0
+2025-12-17,BEEF MEAT PRODUCTS,"Beef Tongue, Local",,582.5
+2025-12-17,CORN PRODUCTS,Corn (White),"Cob, Glutinous",113.53
+2025-12-17,CORN PRODUCTS,Corn (Yellow),"Cob, Sweet Corn",93.56
+2025-12-17,CORN PRODUCTS,"Corn Cracked (Yellow, Feed Grade)",,50.0
+2025-12-17,CORN PRODUCTS,Corn Grits (Feed Grade),,47.5
+2025-12-17,CORN PRODUCTS,"Corn Grits (White, Food Grade)",,120.0
+2025-12-17,CORN PRODUCTS,"Corn Grits (Yellow, Food Grade)",,120.0
+2025-12-17,FISH PRODUCTS,Alumahan (Indian Mackerel),Medium (4-6 pcs/kg),359.7
+2025-12-17,FISH PRODUCTS,"Bangus, Large",Large (1-2 pcs),264.95
+2025-12-17,FISH PRODUCTS,"Bangus, Medium",Medium (3-4 pcs/kg),239.42
+2025-12-17,FISH PRODUCTS,"Galunggong, Imported","Male, Medium (12-14 pcs/kg)",306.79
+2025-12-17,FISH PRODUCTS,"Galunggong, Local","Male, Medium (12-14 pcs/kg)",356.07
+2025-12-17,FISH PRODUCTS,"Pampano, Imported",,405.9
+2025-12-17,FISH PRODUCTS,"Pampano, Local",,508.13
+2025-12-17,FISH PRODUCTS,"Salmon Belly, Imported",,416.79
+2025-12-17,FISH PRODUCTS,"Salmon Head, Imported",,221.92
+2025-12-17,FISH PRODUCTS,Sardines (Tamban),,151.67
+2025-12-17,FISH PRODUCTS,"Squid (Pusit Bisaya), Local",Medium,470.48
+2025-12-17,FISH PRODUCTS,"Squid, Imported",,219.29
+2025-12-17,FISH PRODUCTS,Tambakol (Yellow-Fin Tuna) Local,"Medium, Fresh or Chilled",300.18
+2025-12-17,FISH PRODUCTS,Tilapia,Medium (5-6 pcs/kg),153.82
+2025-12-17,FRUITS,Avocado,,407.0
+2025-12-17,FRUITS,Banana (Lakatan),8-10 pcs/kg,97.34
+2025-12-17,FRUITS,Banana (Latundan),10–12 pcs/kg,75.99
+2025-12-17,FRUITS,Banana (Saba),,53.92
+2025-12-17,FRUITS,Calamansi,,103.98
+2025-12-17,FRUITS,Mango (Carabao),"Ripe, 3-4 pcs/kg",214.41
+2025-12-17,FRUITS,Melon,,107.46
+2025-12-17,FRUITS,Papaya,"Solo, Ripe, 2-3 pcs/kg",71.49
+2025-12-17,FRUITS,Pomelo,,175.89
+2025-12-17,FRUITS,Watermelon,,77.35
+2025-12-17,HIGHLAND VEGETABLES,"Bell Pepper (Green), Local",Medium (151-250gm/pc),306.34
+2025-12-17,HIGHLAND VEGETABLES,"Bell Pepper (Red), Local",Medium (151-250gm/pc),245.28
+2025-12-17,HIGHLAND VEGETABLES,"Broccoli, Imported",,300.12
+2025-12-17,HIGHLAND VEGETABLES,"Broccoli, Local",Medium (8–10 cm diameter/bunch hd),248.33
+2025-12-17,HIGHLAND VEGETABLES,Cabbage (Rare Ball),510 gm - 1 kg/head,86.17
+2025-12-17,HIGHLAND VEGETABLES,Cabbage (Scorpio),750 gm - 1 kg/head,81.0
+2025-12-17,HIGHLAND VEGETABLES,Cabbage (Wonder Ball),510 gm - 1 kg/head,79.18
+2025-12-17,HIGHLAND VEGETABLES,"Cabbage, Imported",,160.0
+2025-12-17,HIGHLAND VEGETABLES,"Carrots, Imported",,104.32
+2025-12-17,HIGHLAND VEGETABLES,"Carrots, Local",8-10 pcs/kg,114.42
+2025-12-17,HIGHLAND VEGETABLES,"Cauliflower, Imported",,210.0
+2025-12-17,HIGHLAND VEGETABLES,"Cauliflower, Local",mrr(/%ciflx 4),211.38
+2025-12-17,HIGHLAND VEGETABLES,Celery,Medium (501-800 g),182.7
+2025-12-17,HIGHLAND VEGETABLES,Chayote,Medium (301-400 g),113.53
+2025-12-17,HIGHLAND VEGETABLES,"Chilli (Red), Local",Tingala,602.04
+2025-12-17,HIGHLAND VEGETABLES,"Garlic, Imported",,153.35
+2025-12-17,HIGHLAND VEGETABLES,"Garlic, Native/Local",,408.33
+2025-12-17,HIGHLAND VEGETABLES,"Ginger, Imported","Fairly well-matured, medium (150–300 g)",169.09
+2025-12-17,HIGHLAND VEGETABLES,"Ginger, Local","Fairly well-matured, medium (150–300 g)",170.4
+2025-12-17,HIGHLAND VEGETABLES,"Habichuelas/Baguio Beans, Local",,248.05
+2025-12-17,HIGHLAND VEGETABLES,Lettuce (Green Ice),,360.92
+2025-12-17,HIGHLAND VEGETABLES,Lettuce (Iceberg),Medium (301–450 g/bunch),440.5
+2025-12-17,HIGHLAND VEGETABLES,Lettuce (Romaine),,398.82
+2025-12-17,HIGHLAND VEGETABLES,Pechay Baguio,,92.81
+2025-12-17,HIGHLAND VEGETABLES,"Red Onion, Imported",Large,140.22
+2025-12-17,HIGHLAND VEGETABLES,"Red Onion, Imported",Medium,186.19
+2025-12-17,HIGHLAND VEGETABLES,"Red Onion, Local",13–15 pcs/kg,264.21
+2025-12-17,HIGHLAND VEGETABLES,"White Onion, Imported",Large,122.62
+2025-12-17,HIGHLAND VEGETABLES,"White Onion, Imported",Medium,137.11
+2025-12-17,HIGHLAND VEGETABLES,"White Potato, Local",10–12 pcs/kg,148.0
+2025-12-17,IMPORTED COMMERCIAL RICE,Basmati Rice,,211.0
+2025-12-17,IMPORTED COMMERCIAL RICE,Glutinous Rice,,61.49
+2025-12-17,IMPORTED COMMERCIAL RICE,Jasponica/Japonica Rice,,61.61
+2025-12-17,IMPORTED COMMERCIAL RICE,Other Special Rice,White Rice,59.66
+2025-12-17,IMPORTED COMMERCIAL RICE,Premium,5% broken,50.18
+2025-12-17,IMPORTED COMMERCIAL RICE,Regular Milled,20-40% bran streak,38.95
+2025-12-17,IMPORTED COMMERCIAL RICE,Well Milled,1-19 bran streak,44.78
+2025-12-17,LEGUMES,Mungbean,,129.67
+2025-12-17,LOCAL COMMERCIAL RICE,Other Special Rice,White Rice,57.67
+2025-12-17,LOCAL COMMERCIAL RICE,Premium,5% broken,50.25
+2025-12-17,LOCAL COMMERCIAL RICE,Regular Milled,20-40% bran streak,38.75
+2025-12-17,LOCAL COMMERCIAL RICE,Well Milled,1-19 bran streak,43.59
+2025-12-17,LOWLAND VEGETABLES,Ampalaya,4-5pcs/kg,147.13
+2025-12-17,LOWLAND VEGETABLES,"Chilli (Green), Local",Haba/Panigang,393.45
+2025-12-17,LOWLAND VEGETABLES,Eggplant,3-4 Small Bundles,148.96
+2025-12-17,LOWLAND VEGETABLES,Native Pechay,3-4 Small Bundles,110.97
+2025-12-17,LOWLAND VEGETABLES,Pole Sitao,3-4 Small Bundles,146.79
+2025-12-17,LOWLAND VEGETABLES,Squash,Suprema Variety,59.67
+2025-12-17,LOWLAND VEGETABLES,Tomato,15–18 pcs/kg,158.24
+2025-12-17,OTHER BASIC COMMODITIES,Cooking Oil (Coconut),350 ml/bottle,59.03
+2025-12-17,OTHER BASIC COMMODITIES,Cooking Oil (Coconut),1 Liter/bottle,162.16
+2025-12-17,OTHER BASIC COMMODITIES,Cooking Oil (Minola),500 ml/bottle,90.0
+2025-12-17,OTHER BASIC COMMODITIES,Cooking Oil (Minola),"1,000 ml/bottle",140.0
+2025-12-17,OTHER BASIC COMMODITIES,"Cooking Oil (Palm Olein, Jolly Brand)","1,000 ml/bottle",153.33
+2025-12-17,OTHER BASIC COMMODITIES,Cooking Oil (Palm),350 ml/bottle,36.19
+2025-12-17,OTHER BASIC COMMODITIES,Cooking Oil (Palm),1 Liter/bottle,90.61
+2025-12-17,OTHER BASIC COMMODITIES,Cooking Oil (Spring),500 ml/bottle,75.0
+2025-12-17,OTHER BASIC COMMODITIES,Cooking Oil (Spring),"1,000 ml/bottle",150.71
+2025-12-17,OTHER BASIC COMMODITIES,Salt (Iodized),,39.0
+2025-12-17,OTHER BASIC COMMODITIES,Salt (Rock),,21.4
+2025-12-17,OTHER BASIC COMMODITIES,Sugar (Brown),,73.69
+2025-12-17,OTHER BASIC COMMODITIES,Sugar (Refined),,82.13
+2025-12-17,OTHER BASIC COMMODITIES,Sugar (Washed),,75.28
+2025-12-17,OTHER LIVESTOCK MEAT PRODUCTS,"Carabeef Forequarter, Local",,330.0
+2025-12-17,OTHER LIVESTOCK MEAT PRODUCTS,"Carabeef Meat, Local",,361.5
+2025-12-17,OTHER LIVESTOCK MEAT PRODUCTS,"Carabeef Rump Steak, Local",,385.0
+2025-12-17,OTHER LIVESTOCK MEAT PRODUCTS,"Carabeef Trimmings, Local",,350.0
+2025-12-17,PORK MEAT PRODUCTS,"Pork Belly (Liempo), Imported",,311.85
+2025-12-17,PORK MEAT PRODUCTS,"Pork Belly (Liempo), Local",,393.74
+2025-12-17,PORK MEAT PRODUCTS,"Pork Boston Shoulder, Local",,364.53
+2025-12-17,PORK MEAT PRODUCTS,"Pork Chop, Imported",,255.0
+2025-12-17,PORK MEAT PRODUCTS,"Pork Chop, Local",,344.0
+2025-12-17,PORK MEAT PRODUCTS,"Pork Fore Shank, Imported",,191.43
+2025-12-17,PORK MEAT PRODUCTS,"Pork Fore Shank, Local",,324.93
+2025-12-17,PORK MEAT PRODUCTS,"Pork Head, Imported",,200.0
+2025-12-17,PORK MEAT PRODUCTS,"Pork Head, Local",,252.86
+2025-12-17,PORK MEAT PRODUCTS,"Pork Hind Leg (Pigue), Imported",,256.09
+2025-12-17,PORK MEAT PRODUCTS,"Pork Hind Leg (Pigue), Local",,342.07
+2025-12-17,PORK MEAT PRODUCTS,"Pork Hind Shank, Imported",,210.0
+2025-12-17,PORK MEAT PRODUCTS,"Pork Hind Shank, Local",,319.18
+2025-12-17,PORK MEAT PRODUCTS,"Pork Loin, Imported",,278.0
+2025-12-17,PORK MEAT PRODUCTS,"Pork Loin, Local",,387.0
+2025-12-17,PORK MEAT PRODUCTS,"Pork Offals, Imported",,140.59
+2025-12-17,PORK MEAT PRODUCTS,"Pork Offals, Local",,246.93
+2025-12-17,PORK MEAT PRODUCTS,"Pork Picnic Shoulder, Imported (Kasim)",,255.2
+2025-12-17,PORK MEAT PRODUCTS,"Pork Picnic Shoulder, Local (Kasim)",,341.62
+2025-12-17,PORK MEAT PRODUCTS,"Pork Rind/Skin, Local",,107.27
+2025-12-17,PORK MEAT PRODUCTS,"Pork Spare Ribs, Imported",,240.0
+2025-12-17,PORK MEAT PRODUCTS,"Pork Spare Ribs, Local",,335.73
+2025-12-17,POULTRY PRODUCTS,"Chicken Breast, Local","Unbranded, Fresh",211.22
+2025-12-17,POULTRY PRODUCTS,"Chicken Breast, Local",Magnolia,223.02
+2025-12-17,POULTRY PRODUCTS,"Chicken Breast, Local",Bounty Fresh,235.0
+2025-12-17,POULTRY PRODUCTS,"Chicken Drumstick, Local","Unbranded, Fresh",219.51
+2025-12-17,POULTRY PRODUCTS,"Chicken Drumstick, Local",Magnolia,228.46
+2025-12-17,POULTRY PRODUCTS,"Chicken Drumstick, Local",Bounty Fresh,236.0
+2025-12-17,POULTRY PRODUCTS,"Chicken Egg (White, Medium)",56-60 grams/pc,8.28
+2025-12-17,POULTRY PRODUCTS,"Chicken Feet, Local",,150.44
+2025-12-17,POULTRY PRODUCTS,Chicken Leg Quarter,"Unbranded, Fresh",211.75
+2025-12-17,POULTRY PRODUCTS,Chicken Leg Quarter,Magnolia,225.96
+2025-12-17,POULTRY PRODUCTS,Chicken Leg Quarter,Bounty Fresh,235.0
+2025-12-17,POULTRY PRODUCTS,"Chicken Leg Quarter, Imported",,165.83
+2025-12-17,POULTRY PRODUCTS,"Chicken Liver, Local",,235.74
+2025-12-17,POULTRY PRODUCTS,"Chicken Neck, Local",,145.7
+2025-12-17,POULTRY PRODUCTS,"Chicken Rind/Skin, Local",,155.91
+2025-12-17,POULTRY PRODUCTS,"Chicken Thigh, Local",,218.5
+2025-12-17,POULTRY PRODUCTS,"Chicken Wing, Local","Unbranded, Fresh",221.61
+2025-12-17,POULTRY PRODUCTS,"Chicken Wing, Local",Magnolia,228.77
+2025-12-17,POULTRY PRODUCTS,"Chicken Wing, Local",Bounty Fresh,236.67
+2025-12-17,POULTRY PRODUCTS,"Whole Chicken, Local",Fully Dressed,202.84
+2025-12-17,POULTRY PRODUCTS,"Whole Chicken, Local",Magnolia,212.56
+2025-12-17,POULTRY PRODUCTS,"Whole Chicken, Local",Bounty Fresh,217.5
