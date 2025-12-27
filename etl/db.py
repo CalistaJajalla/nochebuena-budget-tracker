@@ -4,10 +4,6 @@ import psycopg2
 import streamlit as st
 import os
 
-import psycopg2
-import streamlit as st
-import os
-
 # Local fallback (used only on your machine)
 LOCAL_DB = {
     "host": "localhost",
@@ -27,6 +23,17 @@ def get_connection():
     if "STREAMLIT_RUNTIME" in os.environ:
         try:
             return psycopg2.connect(
+                st.secrets["database"]["url"],
+                sslmode="require"
+            )
+        except Exception as e:
+            st.error("❌ Supabase connection failed")
+            st.exception(e)
+            st.stop()
+
+    # ---- LOCAL DEV ----
+    return psycopg2.connect(**LOCAL_DB)
+onnect(
                 st.secrets["database"]["url"],
                 sslmode="require"
             )
