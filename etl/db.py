@@ -13,34 +13,17 @@ LOCAL_DB = {
 }
 
 def get_connection():
-    """
-    Priority:
-    1. Supabase (Streamlit secrets)
-    2. Local Postgres (only if running)
-    """
-
-    # 1️⃣ SUPABASE (Cloud)
+    """Try Supabase first, then local."""
+    # Cloud DB
     if "database" in st.secrets:
         try:
-            return psycopg2.connect(
-                st.secrets["database"]["url"],
-                sslmode="require"
-            )
+            return psycopg2.connect(st.secrets["database"]["url"], sslmode="require")
         except OperationalError as e:
-            st.error("❌ Supabase connection failed.")
-            st.exception(e)
-            st.stop()  # HARD STOP — do NOT fallback silently
+            st.warning(f"Supabase connection failed: {e}\nFalling back to local DB.")
 
-    # 2️⃣ LOCAL POSTGRES (DEV ONLY)
+    # Local DB fallback
     try:
         return psycopg2.connect(**LOCAL_DB)
-    except OperationalError:
-        st.error(
-            "❌ No database available.\n\n"
-            "• Supabase not configured\n"
-            "• Local PostgreSQL not running\n\n"
-            "Line graphs require a database."
-        )
+    except OperationalError as e:
+        st.error(f"No DB available: {e}")
         st.stop()
-conn = get_connection()
-
