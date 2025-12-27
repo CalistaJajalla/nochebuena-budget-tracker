@@ -42,3 +42,5 @@ def get_connection():
             "Line graphs require a database."
         )
         st.stop()
+conn = get_connection()
+
