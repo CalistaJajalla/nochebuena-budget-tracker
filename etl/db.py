@@ -5,20 +5,20 @@ import psycopg2
 import streamlit as st
 from psycopg2 import OperationalError
 
-# Local DB config (password from env, not hardcoded)
+# Local DB config (password from env, not in code)
 LOCAL_DB = {
     "host": "localhost",
     "port": 5432,
     "dbname": "nochebuena",
     "user": "noche_user",
-    "password": os.getenv("LOCAL_DB_PASSWORD")  # set locally if using local DB
+    "password": os.getenv("LOCAL_DB_PASSWORD")  # optional, set locally
 }
 
 def get_connection():
     """
     Connect to Supabase first (via Streamlit secrets), fallback to local.
     """
-    # 1️⃣ Supabase
+    # 1️⃣ Try Supabase (Cloud)
     if hasattr(st, "secrets") and "database" in st.secrets:
         supabase_url = st.secrets["database"].get("url")
         if supabase_url:
@@ -26,7 +26,7 @@ def get_connection():
                 conn = psycopg2.connect(supabase_url, sslmode="require")
                 return conn
             except OperationalError as e:
-                st.warning(f"Supabase connection failed, falling back to local. See logs.")
+                st.warning("Supabase connection failed, falling back to local DB.")
                 print("DEBUG SUPABASE ERROR:", e)
 
     # 2️⃣ Local fallback
