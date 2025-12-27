@@ -4,7 +4,6 @@ import psycopg2
 import streamlit as st
 from psycopg2 import OperationalError
 
-# LOCAL DATABASE
 LOCAL_DB = {
     "host": "localhost",
     "port": 5432,
@@ -15,29 +14,31 @@ LOCAL_DB = {
 
 def get_connection():
     """
-    Returns a psycopg2 connection.
-    - If Streamlit secrets exist → use cloud DB (Supabase)
-    - Otherwise → try local Postgres, but safely
+    Priority:
+    1. Supabase (Streamlit secrets)
+    2. Local Postgres (only if running)
     """
-    # 1. Cloud DB (Streamlit Secrets)
-    if hasattr(st, "secrets") and "database" in st.secrets:
+
+    # 1️⃣ SUPABASE (Cloud)
+    if "database" in st.secrets:
         try:
-            conn = psycopg2.connect(
+            return psycopg2.connect(
                 st.secrets["database"]["url"],
                 sslmode="require"
             )
-            return conn
         except OperationalError as e:
-            st.error(f"Could not connect to cloud DB: {e}")
-            st.stop()
+            st.error("❌ Supabase connection failed.")
+            st.exception(e)
+            st.stop()  # HARD STOP — do NOT fallback silently
 
-    # 2. Local DB
+    # 2️⃣ LOCAL POSTGRES (DEV ONLY)
     try:
-        conn = psycopg2.connect(**LOCAL_DB)
-        return conn
+        return psycopg2.connect(**LOCAL_DB)
     except OperationalError:
-        st.warning(
-            "Local database not found. Running without database support.\n"
-            "Price trends will not be available."
+        st.error(
+            "❌ No database available.\n\n"
+            "• Supabase not configured\n"
+            "• Local PostgreSQL not running\n\n"
+            "Line graphs require a database."
         )
-        return None
+        st.stop()
