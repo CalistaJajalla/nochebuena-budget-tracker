@@ -3,7 +3,7 @@
 import psycopg2
 import streamlit as st
 
-# Default local config
+# Local Postgres config
 LOCAL_DB = {
     "host": "localhost",
     "port": 5432,
@@ -13,8 +13,12 @@ LOCAL_DB = {
 }
 
 def get_connection():
-    """Return a new database connection (local or Supabase with SSL)"""
-    if "database" in st.secrets:  # Streamlit Cloud / Supabase
+    """
+    Return a new database connection.
+    Auto-switches to Supabase if running on Streamlit Cloud.
+    """
+    try:
+        # If secrets exist, use Supabase
         cfg = st.secrets["database"]
         db_config = {
             "host": cfg["host"],
@@ -22,10 +26,10 @@ def get_connection():
             "dbname": cfg["name"],
             "user": cfg["user"],
             "password": cfg["pass"],
-            "sslmode": "require"  # Important for Supabase
+            "sslmode": "require" 
         }
-    else:  # Local
+    except Exception:
+        # Otherwise use local Postgres
         db_config = LOCAL_DB
 
     return psycopg2.connect(**db_config)
-
