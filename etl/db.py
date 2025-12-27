@@ -2,14 +2,25 @@
 
 import os
 import psycopg2
+import streamlit as st
 
-DB_CONFIG = {
-    "host": os.environ.get("DB_HOST", "localhost"),
-    "port": int(os.environ.get("DB_PORT", 5432)),
-    "dbname": os.environ.get("DB_NAME", "nochebuena"),
-    "user": os.environ.get("DB_USER", "noche_user"),
-    "password": os.environ.get("DB_PASS", "noche_pass"),
-}
+# Check if running in Streamlit Cloud or local
+if "SECRETS" in st.secrets:  # Streamlit Cloud
+    DB_CONFIG = {
+        "host": st.secrets["database"]["host"],
+        "port": st.secrets["database"]["port"],
+        "dbname": st.secrets["database"]["name"],
+        "user": st.secrets["database"]["user"],
+        "password": st.secrets["database"]["pass"]
+    }
+else:  # Local fallback
+    DB_CONFIG = {
+        "host": "localhost",
+        "port": 5432,
+        "dbname": "nochebuena",
+        "user": "noche_user",
+        "password": "noche_pass"
+    }
 
 def get_connection():
     """Return a new database connection"""
