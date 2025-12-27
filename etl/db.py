@@ -2,18 +2,13 @@
 
 import os
 import psycopg2
-from dotenv import load_dotenv
 
-# Load .env if present (local dev)
-load_dotenv()
-
-# DATABASE CONFIG
 DB_CONFIG = {
-    "host": os.getenv("DB_HOST", "localhost"),      # fallback to localhost
-    "port": int(os.getenv("DB_PORT", 5432)),       # fallback to 5432
-    "dbname": os.getenv("DB_NAME", "nochebuena"),  # fallback to local db name
-    "user": os.getenv("DB_USER", "noche_user"),    # fallback to local user
-    "password": os.getenv("DB_PASSWORD", "noche_pass")  # fallback to local password
+    "host": os.environ.get("DB_HOST", "localhost"),
+    "port": int(os.environ.get("DB_PORT", 5432)),
+    "dbname": os.environ.get("DB_NAME", "nochebuena"),
+    "user": os.environ.get("DB_USER", "noche_user"),
+    "password": os.environ.get("DB_PASS", "noche_pass"),
 }
 
 def get_connection():
