@@ -13,17 +13,19 @@ LOCAL_DB = {
 }
 
 def get_connection():
-    """Return a new database connection"""
-    if "database" in st.secrets:
+    """Return a new database connection (local or Supabase with SSL)"""
+    if "database" in st.secrets:  # Streamlit Cloud / Supabase
         cfg = st.secrets["database"]
         db_config = {
             "host": cfg["host"],
             "port": cfg["port"],
             "dbname": cfg["name"],
             "user": cfg["user"],
-            "password": cfg["pass"]
+            "password": cfg["pass"],
+            "sslmode": "require"  # Important for Supabase
         }
-    else:
+    else:  # Local
         db_config = LOCAL_DB
 
     return psycopg2.connect(**db_config)
+
