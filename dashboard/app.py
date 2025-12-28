@@ -1,8 +1,14 @@
+import sys
+from pathlib import Path
+
+# for etl in streamlit
+repo_root = Path(__file__).parents[1]
+sys.path.append(str(repo_root))
+
 import io
 import json
 import uuid
 from datetime import datetime
-from pathlib import Path
 
 import streamlit as st
 import pandas as pd
@@ -13,6 +19,8 @@ from reportlab.pdfgen import canvas
 from reportlab.lib import colors
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
+
+# DB connnect
 from etl.db import get_connection
 
 # PAGE CONFIG
