@@ -21,7 +21,7 @@ from reportlab.lib import colors
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 
-from etl.db import get_connection
+from etl.db import get_engine
 
 # PAGE CONFIG
 st.set_page_config(
@@ -318,18 +318,18 @@ st.caption(
 )
 
 if st.session_state.cart:
-    conn = get_connection()
+    engine = get_engine()
     query = """
         SELECT d.date, f.price
         FROM fact_prices f
         JOIN dim_item i ON f.item_id = i.item_id
         JOIN dim_date d ON f.date_id = d.date_id
-        WHERE i.item_name = %s
+        WHERE i.item_name = :item
         ORDER BY d.date
     """
     cols = st.columns(2)
     for i, c in enumerate(st.session_state.cart):
-        df = pd.read_sql(query, conn, params=(c["item"],))
+        df = pd.read_sql(query, engine, params={"item": c["item"]})
         if df.empty:
             continue
         with cols[i % 2]:
