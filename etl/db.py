@@ -15,25 +15,19 @@ LOCAL_DB_CONFIG = {
 }
 
 def get_connection():
-    """
-    Try to connect to:
-    1. Supabase session pooler via st.secrets["database"]["url"]
-    2. Local database fallback
-    """
-
-    # 1. Supabase
+    """Try Supabase first, fallback to local."""
+    
+    # Supabase session pooler
     if "database" in st.secrets and "url" in st.secrets["database"]:
         url = st.secrets["database"]["url"]
         try:
-            conn = psycopg2.connect(url)
-            return conn
+            return psycopg2.connect(url)
         except OperationalError as e:
             st.warning(f"Supabase connection failed: {e}\nFalling back to local DB.")
 
-    # 2. Local fallback
+    # Local fallback
     try:
-        conn = psycopg2.connect(**LOCAL_DB_CONFIG)
-        return conn
+        return psycopg2.connect(**LOCAL_DB_CONFIG)
     except OperationalError as e:
         st.error(f"Local DB connection failed: {e}")
         st.stop()
