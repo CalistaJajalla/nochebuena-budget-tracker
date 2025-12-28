@@ -5,8 +5,9 @@ import psycopg2
 import streamlit as st
 from psycopg2 import OperationalError
 import os
+import socket
 
-# Local Postgres config
+# Local Postgres config (for dev only)
 LOCAL_DB = {
     "host": "localhost",
     "port": 5432,
@@ -17,30 +18,32 @@ LOCAL_DB = {
 
 def get_connection():
     """
-    Attempt connection to Supabase session pooler first.
-    If it fails, fall back to local Postgres.
+    Attempt connection to Supabase session pooler first (for cloud/Streamlit deployment).
+    If running locally, fallback to local Postgres.
     """
-    # Supabase config from secrets (do NOT hardcode your password)
-    SUPABASE_POOLER = {
-        "host": st.secrets.get("SUPABASE_HOST", ""),
-        "port": int(st.secrets.get("SUPABASE_PORT", 5432)),
-        "dbname": st.secrets.get("SUPABASE_DB", ""),
-        "user": st.secrets.get("SUPABASE_USER", ""),
-        "password": st.secrets.get("SUPABASE_PASSWORD", ""),
-        "sslmode": "require",
-    }
+    # Check if running on Streamlit Cloud or local machine
+    running_locally = os.environ.get("STREAMLIT_SERVER_PORT") is None
 
-    # Try Supabase session pooler
-    try:
-        if all(SUPABASE_POOLER.values()):
-            conn = psycopg2.connect(**SUPABASE_POOLER)
+    if not running_locally:
+        # Supabase Pooler config from secrets
+        supabase = st.secrets["SUPABASE"]
+        try:
+            conn = psycopg2.connect(
+                host=supabase["SUPABASE_HOST"],
+                port=int(supabase["SUPABASE_PORT"]),
+                dbname=supabase["SUPABASE_DB"],
+                user=supabase["SUPABASE_USER"],
+                password=supabase["SUPABASE_PASSWORD"],
+                sslmode="require",
+            )
             return conn
-    except OperationalError as e:
-        st.warning(f"Supabase connection failed: {e}\nFalling back to local DB.")
+        except OperationalError as e:
+            st.error(f"Supabase connection failed: {e}")
+            st.stop()
 
-    # Fall back to local DB
+    # Local fallback (for dev machine)
     try:
         return psycopg2.connect(**LOCAL_DB)
     except OperationalError as e:
-        st.error(f"No DB available: {e}")
+        st.error(f"Local DB connection failed: {e}")
         st.stop()
