@@ -1,38 +1,37 @@
 # The DB port is for both local/cloud (although you can just use local)
 
-import os
 import psycopg2
 import streamlit as st
 from psycopg2 import OperationalError
 
-
 def get_connection():
     """
     Priority:
-    1. Supabase via DATABASE_URL (env var)
-    2. Local Postgres via PG* env vars
+    1. Supabase via Session Pooler
+    2. Local Postgres fallback
     """
 
-    # 1. Supabase (cloud)
-    supabase_url = os.getenv("DATABASE_URL")
-    if supabase_url:
+    # 1. Supabase session pooler
+    if "database" in st.secrets:
+        url = st.secrets["database"]["url"]  # Should be pooler URL
         try:
-            return psycopg2.connect(
-                supabase_url,
-                sslmode="require"
-            )
+            conn = psycopg2.connect(url, sslmode="require")
+            st.info("Connected to Supabase session pooler")
+            return conn
         except OperationalError as e:
-            st.warning("Supabase connection failed, falling back to local.")
+            st.warning(f"Supabase session pooler connection failed: {e}. Falling back to local DB.")
 
-    # 2. Local Postgres (no hardcoded password)
+    # 2. Local Postgres fallback (no hardcoded password)
     try:
-        return psycopg2.connect(
-            host=os.getenv("PGHOST", "localhost"),
-            port=os.getenv("PGPORT", "5432"),
-            dbname=os.getenv("PGDATABASE", "nochebuena"),
-            user=os.getenv("PGUSER"),
-            password=os.getenv("PGPASSWORD"),
+        conn = psycopg2.connect(
+            host="localhost",
+            port="5432",
+            dbname="nochebuena",
+            user="noche_user",
+            password="",  # Empty password for local
         )
+        st.info("Connected to local Postgres")
+        return conn
     except OperationalError as e:
-        st.error("Database connection failed.")
+        st.error(f"Local database connection failed: {e}")
         st.stop()
