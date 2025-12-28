@@ -1,6 +1,6 @@
-pandas
-numpy
-matplotlib
 streamlit
-psycopg2-binary
+pandas
+matplotlib
 reportlab
+SQLAlchemy
+psycopg2-binary
