@@ -318,18 +318,18 @@ st.caption(
 )
 
 if st.session_state.cart:
-    engine = get_engine()
+    engine = get_engine(st.secrets)  # pass secrets if your get_engine needs it
     query = """
         SELECT d.date, f.price
         FROM fact_prices f
         JOIN dim_item i ON f.item_id = i.item_id
         JOIN dim_date d ON f.date_id = d.date_id
-        WHERE i.item_name = :item
+        WHERE i.item_name = %s
         ORDER BY d.date
     """
     cols = st.columns(2)
     for i, c in enumerate(st.session_state.cart):
-        df = pd.read_sql(query, engine, params={"item": c["item"]})
+        df = pd.read_sql(query, engine, params=(c["item"],))
         if df.empty:
             continue
         with cols[i % 2]:
