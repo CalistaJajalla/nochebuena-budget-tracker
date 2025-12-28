@@ -1,39 +1,24 @@
+# etl/db.py
 from sqlalchemy import create_engine
+from urllib.parse import urlparse, urlunparse, parse_qs, urlencode
 import streamlit as st
 
-# Local DB config
-LOCAL_DB = {
-    "user": "noche_user",
-    "password": "noche_pass",
-    "host": "localhost",
-    "port": 5432,
-    "dbname": "nochebuena",
-}
-
 def get_engine():
-    """
-    Connect to Supabase Pooler first, fall back to local Postgres if needed.
-    """
-    # Try Supabase Pooler from Streamlit secrets
-    SUPABASE_URI = st.secrets.get("SUPABASE_URI", "")
-    if SUPABASE_URI:
-        try:
-            engine = create_engine(SUPABASE_URI, pool_pre_ping=True)
-            # Test connection
-            conn = engine.connect()
-            conn.close()
-            return engine
-        except Exception as e:
-            st.warning(f"Supabase connection failed: {e}\nFalling back to local DB.")
+    """Return SQLAlchemy engine for Supabase only."""
+    
+    # Supabase Pooler URL from secrets
+    SUPABASE_URL = st.secrets["SUPABASE_URL"]
 
-    # Fallback to local
-    try:
-        url = f"postgresql://{LOCAL_DB['user']}:{LOCAL_DB['password']}@{LOCAL_DB['host']}:{LOCAL_DB['port']}/{LOCAL_DB['dbname']}"
-        engine = create_engine(url, pool_pre_ping=True)
-        # Test connection
-        conn = engine.connect()
-        conn.close()
-        return engine
-    except Exception as e:
-        st.error(f"No database available: {e}")
-        st.stop()
+    # Clean pgbouncer param if present
+    parsed = urlparse(SUPABASE_URL)
+    query_params = parse_qs(parsed.query)
+    query_params.pop("pgbouncer", None)
+    new_query = urlencode(query_params, doseq=True)
+    cleaned_url = urlunparse(parsed._replace(query=new_query))
+    
+    # Create engine and test connection
+    engine = create_engine(cleaned_url, pool_pre_ping=True)
+    with engine.connect() as conn:
+        pass  # will raise exception if fails
+    
+    return engine
