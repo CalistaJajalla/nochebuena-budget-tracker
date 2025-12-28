@@ -13,11 +13,11 @@ def get_engine():
         )
 
     # Local fallback
-    return create_engine(
+    url = (
         f"postgresql://{os.getenv('DB_USER','noche_user')}:"
         f"{os.getenv('DB_PASSWORD','')}@"
         f"{os.getenv('POSTGRES_HOST','localhost')}:"
         f"{os.getenv('POSTGRES_PORT','5432')}/"
-        f"{os.getenv('POSTGRES_DB','nochebuena')}",
-        pool_pre_ping=True
+        f"{os.getenv('POSTGRES_DB','nochebuena')}"
     )
+    return create_engine(url, pool_pre_ping=True)
