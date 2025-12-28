@@ -1,33 +1,37 @@
-# The DB port is for both local/cloud (although you can just use local)
-
 # etl/db.py
 from sqlalchemy import create_engine
-from urllib.parse import urlparse, urlunparse, parse_qs, urlencode
 import streamlit as st
 
 def get_engine():
     """
-    Returns a SQLAlchemy engine using Supabase Pooler if available,
-    otherwise local DB for development.
+    Attempt connection to Supabase Direct URI first.
+    Fallback to local Postgres if needed.
     """
-    secrets = st.secrets
+    # Supabase Direct connection from Streamlit secrets
+    SUPABASE_URI = st.secrets.get("SUPABASE_URI")  # e.g., postgresql://postgres:<password>@db.admnjjcsgnvpqemgmmip.supabase.co:5432/postgres
 
-    # Cloud: Supabase Pooler URL
-    if "SUPABASE_URL" in secrets:
-        url = secrets["SUPABASE_URL"]
-        # Remove pgbouncer query param if present
-        parsed = urlparse(url)
-        query_params = parse_qs(parsed.query)
-        query_params.pop("pgbouncer", None)
-        new_query = urlencode(query_params, doseq=True)
-        cleaned_url = urlunparse(parsed._replace(query=new_query))
-        return create_engine(cleaned_url, pool_pre_ping=True)
+    if SUPABASE_URI:
+        try:
+            engine = create_engine(SUPABASE_URI, pool_pre_ping=True)
+            # Test connection
+            with engine.connect() as conn:
+                conn.execute("SELECT 1")
+            return engine
+        except Exception as e:
+            st.warning(f"Supabase connection failed: {e}")
 
-    # Local: fallback DB (only for dev/testing)
-    user = secrets.get("DB_USER", "noche_user")
-    password = secrets.get("DB_PASSWORD", "noche_pass")
-    host = secrets.get("POSTGRES_HOST", "localhost")
-    port = secrets.get("POSTGRES_PORT", "5432")
-    db = secrets.get("POSTGRES_DB", "nochebuena")
-    url = f"postgresql://{user}:{password}@{host}:{port}/{db}"
-    return create_engine(url, pool_pre_ping=True)
+    # Local fallback (optional, only if Postgres is running locally)
+    LOCAL_DB = {
+        "user": "noche_user",
+        "password": "noche_pass",
+        "host": "localhost",
+        "port": 5432,
+        "dbname": "nochebuena",
+    }
+    try:
+        url = f"postgresql://{LOCAL_DB['user']}:{LOCAL_DB['password']}@{LOCAL_DB['host']}:{LOCAL_DB['port']}/{LOCAL_DB['dbname']}"
+        engine = create_engine(url, pool_pre_ping=True)
+        return engine
+    except Exception as e:
+        st.error(f"No DB available: {e}")
+        st.stop()
