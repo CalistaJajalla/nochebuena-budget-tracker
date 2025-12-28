@@ -1,43 +1,33 @@
 # The DB port is for both local/cloud (although you can just use local)
 
-import psycopg2
+# etl/db.py
+from sqlalchemy import create_engine
+from urllib.parse import urlparse, urlunparse, parse_qs, urlencode
 import streamlit as st
-from psycopg2 import OperationalError
-import os
 
-# Determine environment
-RUNNING_LOCALLY = os.getenv("RUNNING_LOCALLY", "0") == "1"
-
-# Local Postgres config (for testing on local machine)
-LOCAL_DB = {
-    "host": "localhost",
-    "port": 5432,
-    "dbname": "nochebuena",
-    "user": "noche_user",
-    "password": "noche_pass",
-}
-
-def get_connection():
+def get_engine():
     """
-    Connect to Supabase (Cloud) or local DB (only if running locally).
+    Returns a SQLAlchemy engine using Supabase Pooler if available,
+    otherwise local DB for development.
     """
-    # Supabase URI from secrets
-    SUPABASE_URI = st.secrets.get("SUPABASE_URL", "")
-    if SUPABASE_URI:
-        try:
-            return psycopg2.connect(SUPABASE_URI, sslmode="require")
-        except OperationalError as e:
-            st.error(f"Supabase connection failed: {e}")
-            st.stop()
+    secrets = st.secrets
 
-    # Only attempt local if explicitly running locally
-    if RUNNING_LOCALLY:
-        try:
-            return psycopg2.connect(**LOCAL_DB)
-        except OperationalError as e:
-            st.error(f"Local DB connection failed: {e}")
-            st.stop()
+    # Cloud: Supabase Pooler URL
+    if "SUPABASE_URL" in secrets:
+        url = secrets["SUPABASE_URL"]
+        # Remove pgbouncer query param if present
+        parsed = urlparse(url)
+        query_params = parse_qs(parsed.query)
+        query_params.pop("pgbouncer", None)
+        new_query = urlencode(query_params, doseq=True)
+        cleaned_url = urlunparse(parsed._replace(query=new_query))
+        return create_engine(cleaned_url, pool_pre_ping=True)
 
-    # If here, no DB is available
-    st.error("No database available. Supabase URI not set or connection failed.")
-    st.stop()
+    # Local: fallback DB (only for dev/testing)
+    user = secrets.get("DB_USER", "noche_user")
+    password = secrets.get("DB_PASSWORD", "noche_pass")
+    host = secrets.get("POSTGRES_HOST", "localhost")
+    port = secrets.get("POSTGRES_PORT", "5432")
+    db = secrets.get("POSTGRES_DB", "nochebuena")
+    url = f"postgresql://{user}:{password}@{host}:{port}/{db}"
+    return create_engine(url, pool_pre_ping=True)
