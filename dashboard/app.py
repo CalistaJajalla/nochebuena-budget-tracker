@@ -20,7 +20,7 @@ from reportlab.lib import colors
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 
-from etl.db import get_connection
+from etl.db import get_engine
 
 # PAGE CONFIG
 st.set_page_config(
