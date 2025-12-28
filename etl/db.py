@@ -1,45 +1,42 @@
 # The DB port is for both local/cloud (although you can just use local)
 
 # etl/db.py
-import os
 import psycopg2
 import streamlit as st
 from psycopg2 import OperationalError
 
-# Local Postgres configuration
-LOCAL_DB_CONFIG = {
-    "host": os.getenv("PGHOST", "localhost"),
-    "port": int(os.getenv("PGPORT", 5432)),
-    "dbname": os.getenv("PGDATABASE", "nochebuena"),
-    "user": os.getenv("PGUSER", "noche_user"),
-    "password": os.getenv("PGPASSWORD", "noche_pass"),
+# Local Postgres config
+LOCAL_DB = {
+    "host": "localhost",
+    "port": 5432,
+    "dbname": "nochebuena",
+    "user": "noche_user",
+    "password": "noche_pass",
 }
 
-# Supabase session pooler configuration (set these in Streamlit secrets or environment variables)
-SUPABASE_POOLER_CONFIG = {
-    "host": os.getenv("SUPABASE_HOST", "aws-1-ap-south-1.pooler.supabase.com"),
-    "port": int(os.getenv("SUPABASE_PORT", 5432)),
-    "dbname": os.getenv("SUPABASE_DB", "postgres"),
-    "user": os.getenv("SUPABASE_USER", "postgres"),
-    "password": os.getenv("SUPABASE_PASSWORD", ""),
-    "sslmode": "require"
+# Supabase session pooler config (replace these with your actual pooler credentials)
+SUPABASE_POOLER = {
+    "host": "aws-1-ap-south-1.pooler.supabase.com",
+    "port": 5432,
+    "dbname": "postgres",
+    "user": "postgres",
+    "password": "El4dSzda4TZHxj2i",
+    "sslmode": "require",
 }
-
 
 def get_connection():
-    """Try Supabase session pooler first, fallback to local Postgres."""
-    
-    # 1. Try Supabase
+    """
+    Attempt connection to Supabase session pooler first.
+    If it fails, fall back to local Postgres.
+    """
     try:
-        conn = psycopg2.connect(**SUPABASE_POOLER_CONFIG)
+        conn = psycopg2.connect(**SUPABASE_POOLER)
         return conn
     except OperationalError as e:
-        st.warning(f"Supabase pooler connection failed: {e}. Falling back to local Postgres.")
+        st.warning(f"Supabase connection failed: {e}\nFalling back to local DB.")
 
-    # 2. Fallback to local
     try:
-        conn = psycopg2.connect(**LOCAL_DB_CONFIG)
-        return conn
+        return psycopg2.connect(**LOCAL_DB)
     except OperationalError as e:
-        st.error(f"Local Postgres connection failed: {e}")
+        st.error(f"No DB available: {e}")
         st.stop()
