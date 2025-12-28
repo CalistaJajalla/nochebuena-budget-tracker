@@ -15,18 +15,18 @@ def get_engine(secrets=None):
 
     # Local fallback
     if secrets:
-        user = secrets.get("DB_USER")
-        password = secrets.get("DB_PASSWORD")
-        host = secrets.get("POSTGRES_HOST")
-        port = secrets.get("POSTGRES_PORT")
-        db = secrets.get("POSTGRES_DB")
+        user = secrets.get("DB_USER", "noche_user")
+        password = secrets.get("DB_PASSWORD", "noche_pass")
+        host = secrets.get("POSTGRES_HOST", "localhost")
+        port = int(secrets.get("POSTGRES_PORT", 5432))  # convert to int
+        db = secrets.get("POSTGRES_DB", "nochebuena")
     else:
-        # default local config
         user = "noche_user"
         password = "noche_pass"
         host = "localhost"
         port = 5432
         db = "nochebuena"
+
 
     url = f"postgresql://{user}:{password}@{host}:{port}/{db}"
     return create_engine(url, pool_pre_ping=True)
