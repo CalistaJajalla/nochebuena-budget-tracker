@@ -36,13 +36,20 @@ This project automates extraction of weekly food price data from OCR-processed P
 ```mermaid
 flowchart TD
     raw_pdf[Raw Bantay Presyo PDF Data]
-    etl[ETL Pipeline<br>(extract_pdf.py, clean_prices.py, load_db.py)]
+
+    etl[ETL Pipeline\nextract_pdf.py\nclean_prices.py\nload_db.py]
+
     postgres[(PostgreSQL Database)]
-    ml[ML Pipeline<br>(train_price_model.py, budget_classifier.py)]
+
+    ml[ML Pipeline\ntrain_price_model.py\nbudget_classifier.py]
+
     predictions[Predicted Prices CSV]
-    optimizer[Meal Optimizer<br>(meal_optimizer.py)]
-    full_menu["nochebuena_full_menu.json"]
-    dashboard[Streamlit Dashboard<br>(dashboard/app.py)]
+
+    optimizer[Meal Optimizer\nmeal_optimizer.py]
+
+    full_menu[nochebuena_full_menu.json]
+
+    dashboard[Streamlit Dashboard\ndashboard/app.py]
 
     raw_pdf --> etl --> postgres
     postgres --> ml --> predictions
