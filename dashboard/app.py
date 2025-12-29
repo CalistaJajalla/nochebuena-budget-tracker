@@ -318,7 +318,7 @@ st.caption(
 )
 
 if st.session_state.cart:
-    engine = get_engine(st.secrets) 
+    engine = get_engine(st.secrets)
 
     query = """
         SELECT d.date, f.price
@@ -348,11 +348,8 @@ if st.session_state.cart:
             ax.plot(df["date"], df["price"], marker="o", linewidth=2)
             ax.set_title(c["item"])
             ax.set_ylabel("Price (₱)")
-            ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %d"))
-            ax.xaxis.set_major_locator(mdates.AutoDateLocator())
             ax.grid(True, alpha=0.3)
             plt.xticks(rotation=30)
 
             st.pyplot(fig)
 
-    conn.close()
