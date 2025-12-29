@@ -1,32 +1,45 @@
 from sqlalchemy import create_engine
-from urllib.parse import urlparse, urlunparse, parse_qs, urlencode
 
-def get_engine(secrets=None):
-    # Cloud: use Supabase Pooler URL if available
-    if secrets and "DATABASE_URL" in secrets:
-        url = secrets["DATABASE_URL"]
-        # Sanitize URL: remove 'pgbouncer=true' if present
-        parsed = urlparse(url)
-        query_params = parse_qs(parsed.query)
-        query_params.pop('pgbouncer', None)
-        new_query = urlencode(query_params, doseq=True)
-        cleaned_url = urlunparse(parsed._replace(query=new_query))
-        return create_engine(cleaned_url, pool_pre_ping=True)
-
-    # Local fallback
-    if secrets:
-        user = secrets.get("DB_USER", "noche_user")
-        password = secrets.get("DB_PASSWORD", "noche_pass")
-        host = secrets.get("POSTGRES_HOST", "localhost")
-        port = int(secrets.get("POSTGRES_PORT", 5432))  # convert to int
-        db = secrets.get("POSTGRES_DB", "nochebuena")
-    else:
-        user = "noche_user"
-        password = "noche_pass"
-        host = "localhost"
-        port = 5432
-        db = "nochebuena"
+# LOCAL CONFIG
+LOCAL_DB = {
+    "user": "noche_user",
+    "password": "noche_pass",
+    "host": "localhost",
+    "port": 5432,
+    "db": "nochebuena",
+}
 
 
-    url = f"postgresql://{user}:{password}@{host}:{port}/{db}"
-    return create_engine(url, pool_pre_ping=True)
+def get_engine(secrets=None, use_local=False):
+    """
+    Supabase-first.
+    Local DB is used ONLY if use_local=True.
+    """
+
+    # Local
+    if use_local:
+        url = (
+            f"postgresql://{LOCAL_DB['user']}:{LOCAL_DB['password']}"
+            f"@{LOCAL_DB['host']}:{LOCAL_DB['port']}/{LOCAL_DB['db']}"
+        )
+        return create_engine(
+            url,
+            pool_pre_ping=True,
+            connect_args={"connect_timeout": 5},
+        )
+
+    # Supabase
+    if not secrets or "DATABASE_URL" not in secrets:
+        raise RuntimeError(
+            "Supabase DATABASE_URL missing. "
+            "Do not fall back to localhost in cloud."
+        )
+
+    return create_engine(
+        secrets["DATABASE_URL"].strip(),
+        pool_pre_ping=True,
+        connect_args={
+            "sslmode": "require",
+            "connect_timeout": 5,
+        },
+    )
