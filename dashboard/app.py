@@ -318,7 +318,8 @@ st.caption(
 )
 
 if st.session_state.cart:
-    engine = get_engine(st.secrets)  # pass secrets if your get_engine needs it
+    engine = get_engine(st.secrets) 
+
     query = """
         SELECT d.date, f.price
         FROM fact_prices f
@@ -327,13 +328,22 @@ if st.session_state.cart:
         WHERE i.item_name = %s
         ORDER BY d.date
     """
+
     cols = st.columns(2)
-    for i, c in enumerate(st.session_state.cart):
-        df = pd.read_sql(query, engine, params=(c["item"],))
+
+    for idx, c in enumerate(st.session_state.cart):
+        df = pd.read_sql(
+            query,
+            engine,
+            params=(c["item"],),
+        )
+
         if df.empty:
             continue
-        with cols[i % 2]:
+
+        with cols[idx % 2]:
             df["date"] = pd.to_datetime(df["date"])
+
             fig, ax = plt.subplots(figsize=(6, 3.5))
             ax.plot(df["date"], df["price"], marker="o", linewidth=2)
             ax.set_title(c["item"])
@@ -342,5 +352,7 @@ if st.session_state.cart:
             ax.xaxis.set_major_locator(mdates.AutoDateLocator())
             ax.grid(True, alpha=0.3)
             plt.xticks(rotation=30)
+
             st.pyplot(fig)
+
     conn.close()
