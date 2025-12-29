@@ -2,7 +2,7 @@
 
 An end-to-end data engineering and machine learning pipeline that extracts, cleans, and loads food price data, predicts Christmas Eve prices, and supports interactive meal budgeting through a Streamlit dashboard.
 
-![Streamlit Banner](./data/pics/health-claims-banner.png)
+![Banner](./Pictures/Banner.png)
 
 ---
 
@@ -57,7 +57,7 @@ flowchart TD
 
 ## How to Use the Streamlit Dashboard
 
-![Streamlit Banner](./data/pics/health-claims-ml.png)
+![Meal_Suggest](./Pictures/Meal_Suggest.png)
 
 * Search and add predicted price items to your cart
 * Track your total against a ₱500 budget with warnings
@@ -65,7 +65,7 @@ flowchart TD
 * Receive meal suggestions based on your cart ingredients
 * View historical price trends of selected items
 
-![Streamlit Banner](./data/pics/health-claims-ml.png)
+![Line_Graph](./Pictures/Line_Graph.png)
 
 
 ### Here’s the Streamlit demo: https://nochebuena-budget-tracker.streamlit.app/?embed_options=light_theme,show_footer
