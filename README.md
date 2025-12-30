@@ -34,58 +34,49 @@ This project automates extraction of weekly food price data from OCR-processed P
 ## Architecture Diagram
 
 ```mermaid
-flowchart LR
+flowchart TD
 
-    %% ---------- DATA SOURCES ----------
-    PDF[Raw Bantay Presyo PDFs]
-    OCR[OCR Process]
+    %% ---------- INPUT ----------
+    A[Raw Bantay Presyo PDFs]
 
     %% ---------- ETL ----------
-    EXTRACT[Extract Prices]
-    CLEAN[Clean and Normalize Data]
-    LOAD[Load to Database]
+    B[Extract Prices]
+    C[Clean and Normalize]
+    D[Load to Database]
 
-    CSV1[extracted_prices.csv]
-    CSV2[cleaned_prices.csv]
+    F1[extracted_prices.csv]
+    F2[cleaned_prices.csv]
 
     %% ---------- DATABASE ----------
-    DB[(PostgreSQL Database)]
-    DIM1[dim_item]
-    DIM2[dim_date]
-    FACT[fact_prices]
+    DB[(PostgreSQL)]
+    T1[dim_item]
+    T2[dim_date]
+    T3[fact_prices]
 
-    %% ---------- ML ----------
-    TRAIN[Train Price Model]
-    PREDICT[Generate Holiday Predictions]
-
-    CSV3[predicted_prices.csv]
-
-    %% ---------- OPTIMIZER ----------
-    OPTIMIZE[Meal Optimization Logic]
-    MENU[nochebuena_full_menu.json]
+    %% ---------- ML + OPTIMIZATION ----------
+    E[Train Price Model]
+    F[predicted_prices.csv]
+    G[Meal Optimization]
+    H[nochebuena_full_menu.json]
 
     %% ---------- DASHBOARD ----------
-    DASH[Streamlit Dashboard]
-    PDFR[Generated Receipt PDF]
+    I[Streamlit Dashboard]
+    J[Receipt PDF]
 
-    %% ---------- FLOWS ----------
-    PDF --> OCR --> EXTRACT --> CSV1
-    CSV1 --> CLEAN --> CSV2
-    CSV2 --> LOAD --> DB
+    %% ---------- FLOW ----------
+    A --> B --> F1 --> C --> F2 --> D --> DB
+    DB --> T1
+    DB --> T2
+    DB --> T3
 
-    DB --> DIM1
-    DB --> DIM2
-    DB --> FACT
+    DB --> E --> F
+    F --> D
+    F --> G --> H
 
-    DB --> TRAIN --> PREDICT --> CSV3
-    CSV3 --> LOAD
-
-    CSV3 --> OPTIMIZE --> MENU
-
-    MENU --> DASH
-    CSV3 --> DASH
-    DB --> DASH
-    DASH --> PDFR
+    DB --> I
+    F --> I
+    H --> I
+    I --> J
 ````
 
 ---
