@@ -34,34 +34,34 @@ This project automates extraction of weekly food price data from OCR-processed P
 ## Architecture Diagram
 
 ```mermaid
-flowchart TD
+flowchart LR
 
-    %% ===== STYLES =====
-    classDef process fill:#E3F2FD,stroke:#1565C0,stroke-width:2px;
-    classDef data fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px;
-    classDef storage fill:#FFF3E0,stroke:#EF6C00,stroke-width:2px;
-    classDef output fill:#FCE4EC,stroke:#AD1457,stroke-width:2px;
+    %% ===== STYLES (HIGH CONTRAST) =====
+    classDef process fill:#1E3A8A,color:#FFFFFF,stroke:#000000,stroke-width:2px;
+    classDef data fill:#065F46,color:#FFFFFF,stroke:#000000,stroke-width:2px;
+    classDef storage fill:#7C2D12,color:#FFFFFF,stroke:#000000,stroke-width:2px;
+    classDef output fill:#831843,color:#FFFFFF,stroke:#000000,stroke-width:2px;
 
     %% ===== INPUT =====
-    A[/Raw Bantay Presyo PDFs/]:::data
+    A[Raw Bantay Presyo PDF Files]:::data
 
     %% ===== ETL =====
-    B[Extract Prices\nextract_pdf.py]:::process
-    C[Clean Prices\nclean_prices.py]:::process
-    D[Load Data\nload_db.py]:::process
+    B[Extract Prices extract_pdf.py]:::process
+    C[Clean and Normalize Prices clean_prices.py]:::process
+    D[Load to Database load_db.py]:::process
 
     %% ===== DATABASE =====
-    DB[(PostgreSQL)]:::storage
+    DB[(PostgreSQL Price Database)]:::storage
 
-    %% ===== ML & OPTIMIZER =====
-    E[Train Model\ntrain_price_model.py]:::process
-    F[/Predicted Prices CSV/]:::data
-    G[Meal Optimizer\nmeal_optimizer.py]:::process
-    H[/Noche Buena Menu JSON/]:::data
+    %% ===== ANALYTICS =====
+    E[Train Price Prediction Model train_price_model.py]:::process
+    F[Predicted Weekly Prices CSV]:::data
+    G[Noche Buena Meal Optimizer meal_optimizer.py]:::process
+    H[Optimized Menu JSON]:::data
 
     %% ===== DASHBOARD =====
-    I[Streamlit Dashboard\napp.py]:::process
-    J[/Receipt PDF/]:::output
+    I[Interactive Streamlit Dashboard app.py]:::process
+    J[Generated Receipt and Budget Summary]:::output
 
     %% ===== FLOW =====
     A --> B --> C --> D --> DB
