@@ -34,30 +34,58 @@ This project automates extraction of weekly food price data from OCR-processed P
 ## Architecture Diagram
 
 ```mermaid
-flowchart TD
-    raw_pdf[Raw Bantay Presyo PDF Data]
+flowchart LR
 
-    etl[ETL Pipeline\nextract_pdf.py\nclean_prices.py\nload_db.py]
+    %% ---------- DATA SOURCES ----------
+    PDF[Raw Bantay Presyo PDFs]
+    OCR[OCR Process]
 
-    postgres[(PostgreSQL Database)]
+    %% ---------- ETL ----------
+    EXTRACT[Extract Prices]
+    CLEAN[Clean and Normalize Data]
+    LOAD[Load to Database]
 
-    ml[ML Pipeline\ntrain_price_model.py\nbudget_classifier.py]
+    CSV1[extracted_prices.csv]
+    CSV2[cleaned_prices.csv]
 
-    predictions[Predicted Prices CSV]
+    %% ---------- DATABASE ----------
+    DB[(PostgreSQL Database)]
+    DIM1[dim_item]
+    DIM2[dim_date]
+    FACT[fact_prices]
 
-    optimizer[Meal Optimizer\nmeal_optimizer.py]
+    %% ---------- ML ----------
+    TRAIN[Train Price Model]
+    PREDICT[Generate Holiday Predictions]
 
-    full_menu[nochebuena_full_menu.json]
+    CSV3[predicted_prices.csv]
 
-    dashboard[Streamlit Dashboard\ndashboard/app.py]
+    %% ---------- OPTIMIZER ----------
+    OPTIMIZE[Meal Optimization Logic]
+    MENU[nochebuena_full_menu.json]
 
-    raw_pdf --> etl --> postgres
-    postgres --> ml --> predictions
-    predictions --> postgres
-    predictions --> optimizer --> full_menu
-    full_menu --> dashboard
-    predictions --> dashboard
-    postgres --> dashboard
+    %% ---------- DASHBOARD ----------
+    DASH[Streamlit Dashboard]
+    PDFR[Generated Receipt PDF]
+
+    %% ---------- FLOWS ----------
+    PDF --> OCR --> EXTRACT --> CSV1
+    CSV1 --> CLEAN --> CSV2
+    CSV2 --> LOAD --> DB
+
+    DB --> DIM1
+    DB --> DIM2
+    DB --> FACT
+
+    DB --> TRAIN --> PREDICT --> CSV3
+    CSV3 --> LOAD
+
+    CSV3 --> OPTIMIZE --> MENU
+
+    MENU --> DASH
+    CSV3 --> DASH
+    DB --> DASH
+    DASH --> PDFR
 ````
 
 ---
