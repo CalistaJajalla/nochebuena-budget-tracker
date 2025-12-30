@@ -89,7 +89,8 @@ flowchart TD
 ![Line_Graph](./Pictures/Line_Graph.png)
 
 
-### Here’s the Streamlit demo: https://nochebuena-budget-tracker.streamlit.app/?embed_options=light_theme,show_footer
+### Here’s the Streamlit demo:  
+[View the Streamlit app](https://nochebuena-budget-tracker.streamlit.app/?embed_options=light_theme,show_footer)
 
 ---
 
