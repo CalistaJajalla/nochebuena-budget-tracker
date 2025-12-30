@@ -65,6 +65,7 @@ The dataset is sourced from the **Department of Agriculture's Bantay Presyo Prog
     - Staples (e.g., rice, corn)
     - Fruits
 - **Temporal Granularity:** Weekly snapshots taken on December 7, 14, and 21, capturing price movements during the critical holiday season, when demand and supply dynamics typically shift.
+  - Note: At the time I was making this, data was only available for the following dates, so I had to use Machine Learning to predict the prices for noche buena meals.
 
 ### Use Cases
 
