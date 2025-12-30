@@ -36,34 +36,40 @@ This project automates extraction of weekly food price data from OCR-processed P
 ```mermaid
 flowchart TD
 
-    %% ---------- INPUT ----------
-    A[Raw Bantay Presyo PDFs]
+    %% ===== STYLES =====
+    classDef process fill:#E3F2FD,stroke:#1565C0,stroke-width:1.5px;
+    classDef data fill:#E8F5E9,stroke:#2E7D32,stroke-width:1.5px;
+    classDef storage fill:#FFF3E0,stroke:#EF6C00,stroke-width:1.5px;
+    classDef output fill:#FCE4EC,stroke:#AD1457,stroke-width:1.5px;
 
-    %% ---------- ETL ----------
-    B[Extract Prices]
-    C[Clean and Normalize]
-    D[Load to Database]
+    %% ===== INPUT =====
+    A[/Raw Bantay Presyo PDFs/]:::data
 
-    F1[extracted_prices.csv]
-    F2[cleaned_prices.csv]
+    %% ===== ETL =====
+    B[Extract Prices<br/>(extract_pdf.py)]:::process
+    C[Clean & Normalize<br/>(clean_prices.py)]:::process
+    D[Load to Database<br/>(load_db.py)]:::process
 
-    %% ---------- DATABASE ----------
-    DB[(PostgreSQL)]
-    T1[dim_item]
-    T2[dim_date]
-    T3[fact_prices]
+    F1[/extracted_prices.csv/]:::data
+    F2[/cleaned_prices.csv/]:::data
 
-    %% ---------- ML + OPTIMIZATION ----------
-    E[Train Price Model]
-    F[predicted_prices.csv]
-    G[Meal Optimization]
-    H[nochebuena_full_menu.json]
+    %% ===== DATABASE =====
+    DB[(PostgreSQL)]:::storage
+    T1[(dim_item)]:::storage
+    T2[(dim_date)]:::storage
+    T3[(fact_prices)]:::storage
 
-    %% ---------- DASHBOARD ----------
-    I[Streamlit Dashboard]
-    J[Receipt PDF]
+    %% ===== ML & OPTIMIZATION =====
+    E[Train Price Model<br/>(train_price_model.py)]:::process
+    F[/predicted_prices.csv/]:::data
+    G[Meal Optimizer<br/>(meal_optimizer.py)]:::process
+    H[/nochebuena_full_menu.json/]:::data
 
-    %% ---------- FLOW ----------
+    %% ===== DASHBOARD =====
+    I[Streamlit Dashboard<br/>(dashboard/app.py)]:::process
+    J[/Receipt PDF/]:::output
+
+    %% ===== FLOW =====
     A --> B --> F1 --> C --> F2 --> D --> DB
     DB --> T1
     DB --> T2
