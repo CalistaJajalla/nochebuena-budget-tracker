@@ -34,10 +34,10 @@ This project automates extraction of weekly food price data from OCR-processed P
 ## Architecture Diagram
 
 ```mermaid
-flowchart LR
+flowchart TD
 
-    %% ===== STYLES (HIGH CONTRAST) =====
-    classDef process fill:#1E3A8A,color:#FFFFFF,stroke:#000000,stroke-width:2px;
+    %% ===== STYLES =====
+    classDef process fill:#1E40AF,color:#FFFFFF,stroke:#000000,stroke-width:2px;
     classDef data fill:#065F46,color:#FFFFFF,stroke:#000000,stroke-width:2px;
     classDef storage fill:#7C2D12,color:#FFFFFF,stroke:#000000,stroke-width:2px;
     classDef output fill:#831843,color:#FFFFFF,stroke:#000000,stroke-width:2px;
@@ -45,32 +45,33 @@ flowchart LR
     %% ===== INPUT =====
     A[Raw Bantay Presyo PDF Files]:::data
 
-    %% ===== ETL =====
+    %% ===== ETL PIPELINE =====
     B[Extract Prices extract_pdf.py]:::process
-    C[Clean and Normalize Prices clean_prices.py]:::process
-    D[Load to Database load_db.py]:::process
+    C[Clean and Normalize Data clean_prices.py]:::process
+    D[Load Prices to Database load_db.py]:::process
 
     %% ===== DATABASE =====
-    DB[(PostgreSQL Price Database)]:::storage
+    E[(PostgreSQL Price Database)]:::storage
 
-    %% ===== ANALYTICS =====
-    E[Train Price Prediction Model train_price_model.py]:::process
-    F[Predicted Weekly Prices CSV]:::data
-    G[Noche Buena Meal Optimizer meal_optimizer.py]:::process
-    H[Optimized Menu JSON]:::data
+    %% ===== ML & OPTIMIZATION =====
+    F[Train Price Prediction Model train_price_model.py]:::process
+    G[Predicted Weekly Prices CSV]:::data
+    H[Meal Optimization Engine meal_optimizer.py]:::process
+    I[Optimized Noche Buena Menu JSON]:::data
 
     %% ===== DASHBOARD =====
-    I[Interactive Streamlit Dashboard app.py]:::process
-    J[Generated Receipt and Budget Summary]:::output
+    J[Streamlit Dashboard app.py]:::process
+    K[Budget Summary and Receipt Output]:::output
 
     %% ===== FLOW =====
-    A --> B --> C --> D --> DB
-    DB --> E --> F
-    F --> G --> H
-    DB --> I
-    F --> I
-    H --> I
+    A --> B --> C --> D
+    D --> E
+    E --> F --> G
+    G --> H --> I
+    E --> J
+    G --> J
     I --> J
+    J --> K
 ````
 
 ---
