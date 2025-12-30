@@ -37,48 +37,36 @@ This project automates extraction of weekly food price data from OCR-processed P
 flowchart TD
 
     %% ===== STYLES =====
-    classDef process fill:#E3F2FD,stroke:#1565C0,stroke-width:1.5px;
-    classDef data fill:#E8F5E9,stroke:#2E7D32,stroke-width:1.5px;
-    classDef storage fill:#FFF3E0,stroke:#EF6C00,stroke-width:1.5px;
-    classDef output fill:#FCE4EC,stroke:#AD1457,stroke-width:1.5px;
+    classDef process fill:#E3F2FD,stroke:#1565C0,stroke-width:2px;
+    classDef data fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px;
+    classDef storage fill:#FFF3E0,stroke:#EF6C00,stroke-width:2px;
+    classDef output fill:#FCE4EC,stroke:#AD1457,stroke-width:2px;
 
     %% ===== INPUT =====
     A[/Raw Bantay Presyo PDFs/]:::data
 
     %% ===== ETL =====
-    B[Extract Prices<br/>(extract_pdf.py)]:::process
-    C[Clean & Normalize<br/>(clean_prices.py)]:::process
-    D[Load to Database<br/>(load_db.py)]:::process
-
-    F1[/extracted_prices.csv/]:::data
-    F2[/cleaned_prices.csv/]:::data
+    B[Extract Prices\nextract_pdf.py]:::process
+    C[Clean Prices\nclean_prices.py]:::process
+    D[Load Data\nload_db.py]:::process
 
     %% ===== DATABASE =====
     DB[(PostgreSQL)]:::storage
-    T1[(dim_item)]:::storage
-    T2[(dim_date)]:::storage
-    T3[(fact_prices)]:::storage
 
-    %% ===== ML & OPTIMIZATION =====
-    E[Train Price Model<br/>(train_price_model.py)]:::process
-    F[/predicted_prices.csv/]:::data
-    G[Meal Optimizer<br/>(meal_optimizer.py)]:::process
-    H[/nochebuena_full_menu.json/]:::data
+    %% ===== ML & OPTIMIZER =====
+    E[Train Model\ntrain_price_model.py]:::process
+    F[/Predicted Prices CSV/]:::data
+    G[Meal Optimizer\nmeal_optimizer.py]:::process
+    H[/Noche Buena Menu JSON/]:::data
 
     %% ===== DASHBOARD =====
-    I[Streamlit Dashboard<br/>(dashboard/app.py)]:::process
+    I[Streamlit Dashboard\napp.py]:::process
     J[/Receipt PDF/]:::output
 
     %% ===== FLOW =====
-    A --> B --> F1 --> C --> F2 --> D --> DB
-    DB --> T1
-    DB --> T2
-    DB --> T3
-
+    A --> B --> C --> D --> DB
     DB --> E --> F
-    F --> D
     F --> G --> H
-
     DB --> I
     F --> I
     H --> I
