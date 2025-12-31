@@ -90,7 +90,7 @@ flowchart TD
 
 
 ### Here’s the Streamlit demo:  
-## 👉 [View the Streamlit app](https://nochebuena-budget-tracker.streamlit.app/?embed_options=light_theme,show_footer)
+## 👉 [View the Streamlit app(Fixed!)](https://nochebune-budget-tracker.streamlit.app/?embed_options=light_theme)
 
 ---
 
