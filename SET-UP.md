@@ -8,7 +8,7 @@
 4. [Local Database Setup](#4-local-database-setup)
 5. [Create Database Tables (Schema Setup)](#5-create-database-tables-schema-setup)
 6. [Running the ETL Pipeline](#6-running-the-etl-pipeline)
-7. [Training the Machine Learning Model](#7-training-the-machine-learning-model)
+7. [Training the Machine Learning Model](#7-training-the-machine-learning-model) 
 8. [Launching the Static Dashboard Website](#8-launching-the-static-dashboard-website)
 
 ---
